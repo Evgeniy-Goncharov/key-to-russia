@@ -347,7 +347,7 @@ template {
   src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_c5H7g4.ttf) format('truetype');
 }
 .page-body {
-  background-color: #264F55;
+  background-color: #FFFFFF;
   font-family: "Montserrat";
   font-size: 18px;
   line-height: 22px;
@@ -596,6 +596,116 @@ template {
 }
 .slider-toggle:not(:last-child) {
   margin-right: 30px;
+}
+.services__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 92px;
+  margin-bottom: 58px;
+}
+.section-heading {
+  color: #264F55;
+  font-size: 72px;
+  line-height: 88px;
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+}
+.photos-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+.photos-figure {
+  margin: 0;
+  padding: 0;
+  border-radius: 45px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.25);
+}
+.photos-figure img {
+  display: block;
+}
+.photos-figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 111px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, rgba(38, 79, 85, 0) -0.03%, #264F55 59.38%);
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+.about__wrapper--stretch {
+  width: 100%;
+  background: url("../img/bg/pattern.png");
+  margin-top: 26px;
+  margin-bottom: 95px;
+}
+.about p {
+  width: 713px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 300;
+  box-sizing: border-box;
+  padding-top: 35px;
+  margin-bottom: 57px;
+}
+.advantages-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 31px;
+  width: 713px;
+  display: flex;
+  justify-content: space-between;
+}
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.advantages-item h3 {
+  padding: 0;
+  margin: 0;
+}
+.advantages-item img {
+  order: -1;
+  display: block;
+  margin-bottom: 23px;
+}
+.temple-image {
+  width: 906px;
+  height: 496px;
+  position: absolute;
+  bottom: 0;
+  right: -106px;
+}
+.cities__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-bottom: 115px;
+}
+.cities__heading {
+  width: 962px;
+  margin: 0 auto;
+  margin-bottom: 78px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
