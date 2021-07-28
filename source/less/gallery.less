@@ -1,0 +1,81 @@
+.gallery {
+  background: url("../img/bg/pattern.png");
+}
+
+.gallery__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-top: 91px;
+}
+
+.gallery__heading {
+  margin-bottom: 66px;
+}
+
+.gallery-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.gallery-item {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  gap: 10px;
+  margin-right: 10px;
+  img {
+    border-radius: 30px;
+  }
+}
+
+.gallery-item:nth-child(odd) {
+  grid-template-rows: 316px 465px;
+  img:first-child {
+    grid-column: span 2;
+  }
+}
+
+.gallery-item:nth-child(even) {
+  grid-template-rows: 465px 316px;
+  img:last-child {
+    grid-column: span 2;
+  }
+}
+
+.gallery-item:last-child {
+  margin-right: 0;
+}
+
+.gallery-controls {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  height: 57px;
+  width: 100%;
+  padding: 0 50px;
+  margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-button {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  border: none;
+}
+
+.gallery-button-back {
+  background: @basic-white url("../img/logos/back.svg") no-repeat center;
+}
+
+.gallery-button-next {
+  background: @basic-white url("../img/logos/next.svg") no-repeat center;
+}
