@@ -379,6 +379,7 @@ template {
 }
 .page-header {
   background: url("../img/bg/header-bg.jpg") no-repeat center;
+  background-size: cover;
   min-height: 1081px;
 }
 .page-header__wrapper {
@@ -411,6 +412,76 @@ template {
   padding: 0;
   text-align: left;
 }
+.header__links {
+  display: grid;
+  grid-template-columns: 423px 144px;
+  row-gap: 22px;
+}
+.contacts {
+  margin: 0;
+  padding: 0;
+  justify-self: flex-end;
+  list-style: none;
+  display: flex;
+}
+.contacts__item:not(:last-child) {
+  margin-right: 14px;
+}
+.contacts__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.language {
+  justify-self: flex-end;
+}
+.language-toggle {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.toggle-image {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+.toggle-arabian {
+  background: url("../img/logos/arabian.svg") no-repeat center;
+}
+.toggle-arabian--active {
+  background: url("../img/logos/arabian-active.svg") no-repeat center;
+}
+.toggle-english {
+  background: url("../img/logos/english.png") no-repeat center;
+}
+.toggle-english--active {
+  background: url("../img/logos/english-active.png") no-repeat center;
+}
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.nav-list a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.nav__list a {
+  margin-right: 10px;
+}
+.nav-item:last-child a {
+  margin: 0;
+}
 .logo {
   font-size: 17px;
   line-height: 21px;
@@ -432,9 +503,17 @@ template {
   grid-row-start: 1;
   grid-row-end: 3;
 }
-.logo p {
+.logo-slogan {
   margin: 0;
   padding: 0;
+}
+.logo--small .logo-slogan {
+  font-size: 14px;
+  line-height: 17px;
+}
+.logo--small .logo__grid {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
 }
 .header__links {
   display: grid;
@@ -527,10 +606,10 @@ template {
   flex-direction: column;
 }
 .search-select,
-.search-input {
+.search-input,
+.user__info input {
   height: 72px;
   box-sizing: border-box;
-  margin-top: 20px;
   padding: 19px 23px 23px 23px;
   background-color: #264F55;
   border: 3px solid #FFFFFF;
@@ -538,6 +617,10 @@ template {
   line-height: 29px;
   font-weight: 500;
   color: #FFFFFF;
+}
+.search-select,
+.search-input {
+  margin-top: 20px;
 }
 .select-city {
   width: 500px;
@@ -548,8 +631,8 @@ template {
 .search-input {
   width: 424px;
 }
-.search-submit {
-  width: 304px;
+.search-submit,
+.submit-button {
   height: 72px;
   box-sizing: border-box;
   padding: 19px 23px 23px 23px;
@@ -557,6 +640,9 @@ template {
   font-size: 24px;
   line-height: 29px;
   font-weight: 500;
+}
+.search-submit {
+  width: 304px;
 }
 .intro__wrapper {
   max-width: 1600px;
@@ -808,6 +894,7 @@ template {
 .gallery-list {
   list-style: none;
   margin: 0;
+  margin-bottom: 85px;
   padding: 0;
   display: flex;
   overflow: hidden;
@@ -864,6 +951,70 @@ template {
 }
 .gallery-button-next {
   background: #FFFFFF url("../img/logos/next.svg") no-repeat center;
+}
+.contacts-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: url("../img/bg/phone.png") no-repeat center left;
+}
+.contacts__heading {
+  margin-bottom: 62px;
+}
+.user__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 186px;
+}
+.user__info input {
+  width: 678px;
+  margin-bottom: 20px;
+}
+.submit-button {
+  width: 304px;
+}
+.page-footer {
+  background-color: #264F55;
+}
+.footer__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 545px 1fr;
+  padding-top: 39px;
+  margin-bottom: 36px;
+}
+.footer-links__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+.footer__link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.footer-contacts__wrapper {
+  justify-self: flex-end;
+}
+.contacts__link--big:not(:last-child) {
+  margin-right: 23px;
+}
+.footer__copy {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border-top: 1px solid #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

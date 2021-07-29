@@ -20,10 +20,9 @@
   flex-direction: column;
 }
 
-.search-select, .search-input {
+.search-select, .search-input, .user__info input {
   height: 72px;
   box-sizing: border-box;
-  margin-top: 20px;
   padding: 19px 23px 23px 23px;
   background-color: @basic-green;
   border: 3px solid @basic-white;
@@ -31,6 +30,10 @@
   line-height: 29px;
   font-weight: 500;
   color: @basic-white;
+}
+
+.search-select, .search-input {
+  margin-top: 20px;
 }
 
 .select-city {
@@ -45,8 +48,7 @@
   width: 424px;
 }
 
-.search-submit {
-  width: 304px;
+.search-submit, .submit-button {
   height: 72px;
   box-sizing: border-box;
   padding: 19px 23px 23px 23px;
@@ -54,4 +56,8 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 500;
+}
+
+.search-submit {
+  width: 304px;
 }
