@@ -1,14 +1,29 @@
 .contacts-section {
-  max-width: 1150px;
+  max-width: 1130px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   background: url("../img/bg/phone.png") no-repeat center left;
+
+  @media (max-width: 750px) {
+    background: transparent;
+  }
 }
 
 .contacts__heading {
   margin-bottom: 62px;
+
+  @media (max-width: 850px) {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 .user__info {
@@ -16,13 +31,32 @@
   flex-direction: column;
   align-items: flex-end;
   margin-bottom: 186px;
+
+  @media (max-width: 750px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.user__info label {
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 }
 
 .user__info input {
   width: 678px;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+
+  @media (max-width: 750px) {
+    width: 100%;
+  }
 }
 
 .submit-button {
   width: 304px;
+
+  @media (max-width: 750px) {
+    width: 100%;
+    align-self: center;
+  }
 }

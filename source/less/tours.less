@@ -2,16 +2,34 @@
   max-width: 1600px;
   margin: 0 auto;
   margin-bottom: 138px;
+
+  @media (max-width: 1620px) {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .tours__section-heading {
   margin-bottom: 83px;
+
+  @media (max-width: 850px) {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 570px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 .tours-list {
   list-style: none;
   margin: 0;
-  margin-bottom: 76px;
+  margin-bottom: 53px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -20,14 +38,16 @@
 }
 
 .tours-item {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
   border-radius: 12px;
   min-width: 582px;
   margin-right: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
-  padding: 34px 38px 29px 38px;
+  padding: 38px 10px 29px 30px;
   color: @basic-black;
+
+
   p {
     margin: 0;
     padding: 0;
@@ -35,6 +55,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   span:first-child {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -44,29 +65,71 @@
     justify-content: space-between;
     align-items: center;
     width: 100px;
+    margin-left: 20px;
+
+    @media (max-width: 570px) {
+      font-size: 30px;
+      line-height: 35px;
+      width: 80px;
+    }
+
+    @media (max-width: 450px) {
+      display: none;
+    }
+  }
+
+    @media (max-width: 1620px) {
+      min-width: 100px;
+      width: 48%;
+      align-self: stretch;
+    }
+
+    @media (max-width: 1250px) {
+      width: 100%;
+    }
+}
+
+.tours-item:first-child {
+  @media (min-width: 1620px) {
+    min-width: 790px;
+  }
+}
+
+.tours-item:nth-child(2) {
+  @media (min-width: 1620px) {
+    min-width: 790px;
   }
 }
 
 .tours-item:nth-child(2n) {
-  margin-right: 0;
+  @media (min-width: 1620px) {
+    margin-right: 0;
+  }
 }
 
 .tours__item--growed {
-  flex-grow: 1;
+
+  @media (min-width: 1620px) {
+    flex-grow: 1;
+  }
 }
 
 .tours-heading {
   margin: 0;
   margin-bottom: 8px;
-
   font-family: "Roboto", sans-serif;
   font-size: 37px;
   line-height: 43px;
   font-weight: 700;
+
+  @media (max-width: 570px) {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 .stars {
-  margin-bottom: 38px;
+  margin-bottom: 15px;
 }
 
 .tours-cost {
@@ -75,6 +138,12 @@
   line-height: 63px;
   font-weight: 800;
   color: @basic-green;
+  margin-right: 30px;
+
+  @media (max-width: 570px) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 .tours-button {
@@ -93,4 +162,8 @@
   margin: 0 auto;
   padding: 19px 63px;
   text-align: center;
+
+  @media (max-width: 570px) {
+    padding: 10px;
+  }
 }

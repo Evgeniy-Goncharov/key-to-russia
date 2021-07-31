@@ -2,14 +2,37 @@
   max-width: 1600px;
   margin: 0 auto;
 
+  @media (max-width: 1620px) {
+    margin: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .about__wrapper--stretch {
   width: 100%;
-  background: url("../img/bg/pattern.png");
+  background: url("../img/bg/pattern.png") repeat top left;
   margin-top: 26px;
   margin-bottom: 95px;
   position: relative;
+
+  @media (max-width: 1800px) {
+    background: url("../img/bg/temple.png") no-repeat bottom right,
+                url("../img/bg/pattern.png") repeat top left;
+    background-size: contain, auto;
+  }
+
+  @media (max-width: 1100px) {
+    background: url("../img/bg/pattern.png") repeat top left;
+    margin-bottom: 20px;
+  }
+}
+
+.about-heading {
+  @media (max-width: 550px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .about p {
@@ -19,7 +42,17 @@
   font-weight: 300;
   box-sizing: border-box;
   padding-top: 35px;
-  margin-bottom: 57px;
+  margin: 0;
+  margin-bottom: 65px;
+
+  @media (max-width: 1100px) {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
+  }
 }
 
 .advantages-list {
@@ -30,6 +63,18 @@
   width: 713px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1100px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 760px) {
+    width: 100%;
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column;
+  }
 }
 
 .advantages-item {
@@ -37,6 +82,9 @@
   flex-direction: column;
   align-items: center;
   h3 {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 700;
     padding: 0;
     margin: 0;
   }
@@ -53,4 +101,8 @@
   position: absolute;
   bottom: 0;
   right: 54px;
+
+  @media (max-width:1800px) {
+    display: none;
+  }
 }

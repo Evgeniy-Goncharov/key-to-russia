@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Key to Russia</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -34,10 +35,9 @@
           </ul>
 
           <div class="language">
-            <button class="language-toggle" type="button"><span class="visually-hidden">?</span><span
-                class="toggle-image toggle-arabian"></span></button>
-            <button class="language-toggle" type="button"><span class="visually-hidden">English</span><span
-                class="toggle-image toggle-english--active"></span></button>
+            <button class="language-toggle language-toggle-arabian" type="button" aria-label="Arabian"></button>
+            <button class="language-toggle language-toggle-english language-toggle-english--active" type="button"
+              aria-label="English"></button>
           </div>
 
           <nav class="main-nav">
@@ -50,7 +50,7 @@
           </nav>
         </div>
       </div>
-      <h1 class="page-heading page__heading">Your key to <span>Russia</h1>
+      <h1 class="page-heading page__heading">Your key to <span>Russia</span></h1>
     </div>
   </header>
 
@@ -62,20 +62,20 @@
           <label class="search-label">
             City
             <select class="search-select select-city" name="city">
-              <option class="search-option"></option>
+              <option class="search-option">?</option>
             </select>
           </label>
 
           <label class="search-label">
             Number of people
-            <select class="search-select select-number" name="people" placeholder="Select city">
-              <option class="search-option"></option>
+            <select class="search-select select-number" name="people">
+              <option class="search-option">?</option>
             </select>
           </label>
 
           <label class="search-label">
             Dates of your jorney
-            <input class="search-input" type="date" placeholder="Date">
+            <input class="search-input" type="date">
           </label>
 
           <button class="search-submit" type="submit">Search</button>
@@ -86,9 +86,9 @@
         <h2 class="intro-heading">Open the mysterious soul of the Russians</h2>
         <div class="video__wrapper">
           <ul class="video-list slider">
-            <li class="video-item"><img src="img/gallery/video-1.jpg" alt="?" width="758" height="426"></li>
-            <!-- <li class="video-item"></li>
-          <li class="video-item"></li> -->
+             <li class="video-item"><img src="img/gallery/video-1.jpg" alt="?" width="758" height="426"><!--<video width="758" height="426" src="img/video/video-1." controls>--></li>
+            <li class="video-item"></li>
+            <li class="video-item"></li>
           </ul>
 
           <p class="video-toggles">
@@ -101,7 +101,7 @@
     </div>
 
     <section class="services services__wrapper">
-      <h2 class="section-heading">Our Services</h2>
+      <h2 class="section-heading services__heading">Our Services</h2>
       <ul class="photos-list">
         <li class="photos-item">
           <figure class="photos-figure">
@@ -147,8 +147,8 @@
       </ul>
     </section>
 
-    <section class="about">
-      <h2 class="section-heading about__wrapper">About Us</h2>
+     <section class="about">
+      <h2 class="section-heading about-heading about__wrapper">About Us</h2>
       <div class="about__wrapper--stretch">
         <div class="about__wrapper">
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
@@ -171,12 +171,12 @@
               <img src="img/logos/price.svg" alt="?" width="158" height="158">
             </li>
           </ul>
-          <img class="temple-image" src="../img/bg/temple.png" alt="?" width="906" height="496">
+          <img class="temple-image" src="img/bg/temple.png" alt="?" width="906" height="496">
         </div>
       </div>
     </section>
 
-    <section class="cities cities__wrapper">
+     <section class="cities cities__wrapper">
       <h2 class="section-heading cities__heading">Visit The Most Incredible Cities in Russia</h2>
       <ul class="photos-list">
         <li class="photos-item">
@@ -230,7 +230,7 @@
           <h3 class="tours-heading">Travel through Soshi. All inclusive pack</h3>
           <img class="stars" src="img/logos/5stars.svg" alt="?" width="177" height="27">
           <p>
-            <span><img src="img/logos/people.svg"> 16</span>
+            <span><img src="img/logos/people.svg" alt="?" width="41" height="35"> 16</span>
             <span class="tours-cost">1.500 €</span>
           </p>
         </li>
@@ -239,7 +239,7 @@
           <h3 class="tours-heading">Helicopter ride over volcanoes of Kamchatka</h3>
           <img class="stars" src="img/logos/5stars.svg" alt="?" width="177" height="27">
           <p>
-            <span><img src="img/logos/people.svg"> 6</span>
+            <span><img src="img/logos/people.svg" alt="?" width="41" height="35"> 6</span>
             <span class="tours-cost">4.500 €</span>
           </p>
         </li>
@@ -248,7 +248,7 @@
           <h3 class="tours-heading">All Moscow museums</h3>
           <img class="stars" src="img/logos/5stars.svg" alt="?" width="177" height="27">
           <p>
-            <span><img src="img/logos/people.svg"> 21</span>
+            <span><img src="img/logos/people.svg" alt="?" width="41" height="35"> 21</span>
             <span class="tours-cost">1.850 €</span>
           </p>
         </li>
@@ -257,7 +257,7 @@
           <h3 class="tours-heading">Amazing night boat trip around St. Petersburg</h3>
           <img class="stars" src="img/logos/5stars.svg" alt="?" width="177" height="27">
           <p>
-            <span><img src="img/logos/people.svg"> 23</span>
+            <span><img src="img/logos/people.svg" alt="?" width="41" height="35"> 23</span>
             <span class="tours-cost">2.000 €</span>
           </p>
         </li>
@@ -270,7 +270,7 @@
       <h2 class="gallery__heading section__heading--white section-heading gallery__wrapper">Enjoy Russia</h2>
       <ul class="gallery-list">
         <li class="gallery-item">
-          <img src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
+          <img class="gallery__image--mobile-hidden" src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
           <img src="img/gallery/image-2.jpg" alt="?" width="415" height="465">
           <img src="img/gallery/image-3.jpg" alt="?" width="415" height="465">
         </li>
@@ -278,11 +278,11 @@
         <li class="gallery-item">
           <img src="img/gallery/image-4.jpg" alt="?" width="412" height="465">
           <img src="img/gallery/image-5.jpg" alt="?" width="412" height="465">
-          <img src="img/gallery/image-6.jpg" alt="?" width="843" height="316">
+          <img class="gallery__image--mobile-hidden"  src="img/gallery/image-6.jpg" alt="?" width="843" height="316">
         </li>
 
         <li class="gallery-item">
-          <img src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
+          <img class="gallery__image--mobile-hidden"  src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
           <img src="img/gallery/image-2.jpg" alt="?" width="415" height="465">
           <img src="img/gallery/image-3.jpg" alt="?" width="415" height="465">
         </li>

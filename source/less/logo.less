@@ -2,6 +2,7 @@
   font-size: 17px;
   line-height: 21px;
   font-weight: 400;
+  margin-top: 5px;
 }
 
 .logo-link {
@@ -13,6 +14,10 @@
   display: grid;
   grid-template-columns: min-content 200px;
   column-gap: 29px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: min-content;
+  }
 }
 
 .logo__image {
@@ -24,6 +29,14 @@
 .logo-slogan {
   margin: 0;
   padding: 0;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.logo-slogan:first-of-type {
+  align-self: flex-end;
 }
 
 .logo--small .logo-slogan {
