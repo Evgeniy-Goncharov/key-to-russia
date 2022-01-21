@@ -1,13 +1,16 @@
 .page-header {
   background: url("../img/bg/header-bg.jpg") no-repeat center;
   background-size: cover;
-  min-height: 1081px;
+  height: 1081px;
+  color: @basic-white;
+  max-height: 100vh;
 }
 
 .page-header__wrapper {
   max-width: 1600px;
   margin: 0 auto;
   box-sizing: border-box;
+  height: 100%;
 
   @media (max-width: 1620px) {
     margin: 0;
@@ -26,6 +29,13 @@
   font-size: 140px;
   line-height: 171px;
   font-weight: 600;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  margin: auto;
+  height: min-content;
 
   span {
     font-size: 296px;
@@ -64,31 +74,6 @@
     span {
       line-height: 35px;
     }
-  }
-}
-
-.page__heading {
-  display: block;
-  width: 925px;
-  margin-top: 104px;
-  text-align: right;
-
-  span {
-    display: block;
-    margin-left: -30px;
-    padding: 0;
-    text-align: left;
-
-    @media (max-width: 1200px) {
-      width: 100%;
-      text-align: center;
-      margin: 0;
-    }
-  }
-
-  @media (max-width: 1200px) {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -148,6 +133,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
+
   :first-of-type {
     margin-right: 10px;
   }
@@ -157,7 +143,8 @@
   background: url("../img/logos/arabian.svg") no-repeat center;
 }
 
-.language-toggle-arabian--active, .language-toggle-arabian:hover {
+.language-toggle-arabian--active,
+.language-toggle-arabian:hover {
   background: url("../img/logos/arabian-active.svg") no-repeat center;
 }
 
@@ -165,7 +152,8 @@
   background: url("../img/logos/english.png") no-repeat center;
 }
 
-.language-toggle-english--active, .language-toggle-english:hover {
+.language-toggle-english--active,
+.language-toggle-english:hover {
   background: url("../img/logos/english-active.png") no-repeat center;
 }
 
@@ -187,7 +175,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  Width: 425px;
+  width: 425px;
 }
 
 .nav-list a {

@@ -1,0 +1,24 @@
+.tours-list {
+  margin-bottom: 25px;
+}
+
+.tours-list__wrapper {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 50px;
+
+  & > li {
+    margin-bottom: 60px;
+  }
+
+  & > li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .tours-list__wrapper {
+    padding-left: 0;
+  }
+}

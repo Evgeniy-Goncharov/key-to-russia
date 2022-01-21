@@ -1,0 +1,19 @@
+.page-tours {
+  color: @basic-black;
+}
+
+.page-tours__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 992px) {
+  .page-tours__left-column {
+    display: none;
+  }
+
+  .page-tours__wrapper {
+    grid-template-columns: 1fr;
+  }
+}

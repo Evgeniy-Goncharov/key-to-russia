@@ -44,7 +44,7 @@
             <ul class="nav-list nav__list">
               <li class="nav-item"><a href="#">Our Services</a></li>
               <li class="nav-item"><a href="#">About As</a></li>
-              <li class="nav-item"><a href="#">Our Tours</a></li>
+              <li class="nav-item"><a href="tours.html">Our Tours</a></li>
               <li class="nav-item"><a href="#">Contact Us</a></li>
             </ul>
           </nav>
@@ -78,7 +78,7 @@
             <input class="search-input" type="date">
           </label>
 
-          <button class="search-submit" type="submit">Search</button>
+          <button class="button search-submit" type="submit">Search</button>
         </form>
       </section>
 
@@ -86,7 +86,9 @@
         <h2 class="intro-heading">Open the mysterious soul of the Russians</h2>
         <div class="video__wrapper">
           <ul class="video-list slider">
-             <li class="video-item"><img src="img/gallery/video-1.jpg" alt="?" width="758" height="426"><!--<video width="758" height="426" src="img/video/video-1." controls>--></li>
+            <li class="video-item"><img src="img/gallery/video-1.jpg" alt="?" width="758" height="426">
+              <!--<video width="758" height="426" src="img/video/video-1." controls>-->
+            </li>
             <li class="video-item"></li>
             <li class="video-item"></li>
           </ul>
@@ -147,7 +149,7 @@
       </ul>
     </section>
 
-     <section class="about">
+    <section class="about">
       <h2 class="section-heading about-heading about__wrapper">About Us</h2>
       <div class="about__wrapper--stretch">
         <div class="about__wrapper">
@@ -176,7 +178,7 @@
       </div>
     </section>
 
-     <section class="cities cities__wrapper">
+    <section class="cities cities__wrapper">
       <h2 class="section-heading cities__heading">Visit The Most Incredible Cities in Russia</h2>
       <ul class="photos-list">
         <li class="photos-item">
@@ -225,7 +227,7 @@
 
     <section class="tours tours__wrapper">
       <h2 class="section-heading tours__section-heading">The Best Tours</h2>
-      <ul class="tours-list">
+      <ul class="tours__tours-list">
         <li class="tours-item tours__item--growed">
           <h3 class="tours-heading">Travel through Soshi. All inclusive pack</h3>
           <img class="stars" src="img/logos/5stars.svg" alt="?" width="177" height="27">
@@ -263,7 +265,41 @@
         </li>
       </ul>
 
-      <a class="tours-button tours__button" href="#">Discover more</a>
+      <a class="button button--green tours__button" href="#">Discover more</a>
+    </section>
+
+    <section class="questions container">
+      <h2 class="section-heading">Frequent questions</h2>
+
+      <ul class="questions__list">
+        <li>
+          <button class="accordion">Question 1</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis urna ut dolor ultricies, in feugiat libero malesuada. Mauris in urna a purus euismod elementum vitae a elit. Duis pulvinar, leo ut efficitur hendrerit, magna magna tempor nisl, vel auctor sapien odio non nisi. Praesent rutrum nunc eget ipsum vehicula, eget facilisis tortor convallis. Sed vulputate, augue nec semper efficitur, nunc lorem mattis eros, sit amet faucibus dolor dui accumsan felis. Mauris tincidunt lorem quis ligula ullamcorper interdum.</p>
+          </div>
+        </li>
+
+        <li>
+          <button class="accordion">Question 2</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis urna ut dolor ultricies, in feugiat libero malesuada. Mauris in urna a purus euismod elementum vitae a elit. Duis pulvinar, leo ut efficitur hendrerit, magna magna tempor nisl, vel auctor sapien odio non nisi. Praesent rutrum nunc eget ipsum vehicula, eget facilisis tortor convallis. Sed vulputate, augue nec semper efficitur, nunc lorem mattis eros, sit amet faucibus dolor dui accumsan felis. Mauris tincidunt lorem quis ligula ullamcorper interdum.</p>
+          </div>
+        </li>
+
+        <li>
+          <button class="accordion">Question 3</button>
+          <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lobortis urna ut dolor ultricies, in feugiat libero malesuada. Mauris in urna a purus euismod elementum vitae a elit. Duis pulvinar, leo ut efficitur hendrerit, magna magna tempor nisl, vel auctor sapien odio non nisi. Praesent rutrum nunc eget ipsum vehicula, eget facilisis tortor convallis. Sed vulputate, augue nec semper efficitur, nunc lorem mattis eros, sit amet faucibus dolor dui accumsan felis. Mauris tincidunt lorem quis ligula ullamcorper interdum.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="blog container">
+      <div class="blog__header">
+        <h2 class="section-heading">Blog</h2>
+        <button class="button button--bordered" type="button">View all</button>
+      </div>
     </section>
 
     <section class="gallery">
@@ -278,11 +314,11 @@
         <li class="gallery-item">
           <img src="img/gallery/image-4.jpg" alt="?" width="412" height="465">
           <img src="img/gallery/image-5.jpg" alt="?" width="412" height="465">
-          <img class="gallery__image--mobile-hidden"  src="img/gallery/image-6.jpg" alt="?" width="843" height="316">
+          <img class="gallery__image--mobile-hidden" src="img/gallery/image-6.jpg" alt="?" width="843" height="316">
         </li>
 
         <li class="gallery-item">
-          <img class="gallery__image--mobile-hidden"  src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
+          <img class="gallery__image--mobile-hidden" src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
           <img src="img/gallery/image-2.jpg" alt="?" width="415" height="465">
           <img src="img/gallery/image-3.jpg" alt="?" width="415" height="465">
         </li>
@@ -310,7 +346,7 @@
             <span class="visually-hidden">Phone</span>
             <input type="number" placeholder="Phone">
           </label>
-          <button class="submit-button" type="submit">Send</button>
+          <button class="button submit-button" type="submit">Send</button>
         </form>
       </div>
     </section>
@@ -344,6 +380,7 @@
     <p class="footer__copy">Copyright © 2021 Alist. Все права защищены</p>
 
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

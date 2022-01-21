@@ -37,6 +37,7 @@
     margin-bottom: 20px;
   }
 }
+
 .user__info label {
   @media (max-width: 750px) {
     width: 100%;
@@ -46,6 +47,10 @@
 .user__info input {
   width: 678px;
   margin-bottom: 22px;
+
+  &::placeholder {
+    color: @basic-white;
+  }
 
   @media (max-width: 750px) {
     width: 100%;
