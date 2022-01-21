@@ -1897,10 +1897,10 @@ input:checked ~ .button {
   margin-right: 0;
 }
 .tour-card__includes-item--hotel {
-  background-image: url("../../img/icons/hotel.svg");
+  background-image: url("../img/icons/hotel.svg");
 }
 .tour-card__includes-item--transport {
-  background-image: url("../../img/icons/transport.svg");
+  background-image: url("../img/icons/transport.svg");
 }
 .tour-card__cities-list {
   padding: 0;
