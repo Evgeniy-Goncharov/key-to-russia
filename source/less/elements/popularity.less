@@ -1,0 +1,21 @@
+.popularity {
+  display: flex;
+  padding-top: 10px;
+}
+
+.popularity__star {
+  display: block;
+  width: 29px;
+  height: 27px;
+  stroke: @basic-yellow;
+  fill: none;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--filled {
+    fill: @basic-yellow;
+  }
+}

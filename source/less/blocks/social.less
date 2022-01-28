@@ -1,0 +1,24 @@
+.social {
+  margin: 0;
+  padding: 0;
+  justify-self: flex-end;
+  list-style: none;
+  display: flex;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social__link {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  img {
+    @media (max-width: 600px) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

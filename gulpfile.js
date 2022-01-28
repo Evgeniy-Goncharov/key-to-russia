@@ -7,6 +7,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const svgstore = require("gulp-svgstore");
 const rename = require("gulp-rename");
+const terser = require("gulp-terser");
 
 // Styles
 
@@ -25,10 +26,21 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Swiper
+
+const SScript = () => {
+  return gulp.src("node_modules/swiper/swiper-bundle.js")
+    .pipe(terser())
+    .pipe(rename("swiper.min.js"))
+    .pipe(gulp.dest("source/js"))
+}
+
+exports.SScript = SScript;
+
 // Sprite 
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("source/assets/img/icons/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
@@ -62,5 +74,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, sprite, server, watcher
+  styles, sprite, SScript, server, watcher
 );

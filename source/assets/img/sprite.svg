@@ -1,8 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="hotel" viewBox="0 0 60 60"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="back" viewBox="0 0 19 32"><g fill="none">
+<path d="M16 28.46L3.59998 16.0601L16 3.66016" fill="#264F55"/>
+<path d="M16 28.46L3.59998 16.0601L16 3.66016" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="hotel" viewBox="0 0 60 60"><g fill="none">
 <circle cx="30" cy="30" r="30" fill="#264F55"/>
 <path d="M42.4346 24.7856H26.1527C25.3573 24.7856 24.0293 25.0872 24.0293 27.1336V30.2643H44.5581V27.1336C44.5581 25.0936 43.2301 24.7856 42.4346 24.7856Z" fill="white"/>
 <path d="M19.6029 30.9444H16.5043V20H14.4514V41.2152H16.5043V35.7366H43.8781V41.2088H45.931V30.9444H19.6029Z" fill="white"/>
 <path d="M19.9235 30.3927C21.5073 30.3927 22.7911 29.1088 22.7911 27.5251C22.7911 25.9413 21.5073 24.6575 19.9235 24.6575C18.3398 24.6575 17.0559 25.9413 17.0559 27.5251C17.0559 29.1088 18.3398 30.3927 19.9235 30.3927Z" fill="white"/>
+</g></symbol><symbol id="next" viewBox="0 0 19 32"><g fill="none">
+<path d="M3 3.86035L15.4 16.2603L3 28.6602" fill="#264F55"/>
+<path d="M3 3.86035L15.4 16.2603L3 28.6602" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol><symbol id="star" viewBox="0 0 29 27">
 <path d="M14.6955 2.28633L18.2999 9.73584L18.5425 10.2372L19.0965 10.2949L26.5307 11.0693L20.8132 16.4735L20.4129 16.8518L20.5187 17.3924L22.0115 25.0136L15.1754 21.3204L14.7001 21.0636L14.2248 21.3204L7.42848 24.9921L8.9782 17.7081L9.09307 17.1682L8.69743 16.7833L2.7719 11.0181L10.433 9.99113L10.9634 9.92003L11.1985 9.43921L14.6955 2.28633Z" stroke-width="2"/>
 </symbol><symbol id="transport" viewBox="0 0 60 60"><g fill="none">

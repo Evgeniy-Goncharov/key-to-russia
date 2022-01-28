@@ -1,0 +1,148 @@
+.blog {
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.blog__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__heading {
+  margin-bottom: 14px;
+}
+
+.blog__slider-wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 91px;
+  position: relative;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: @basic-green;
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 48%;
+
+    svg {
+      width: 19px;
+      height: 32px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 5px;
+  }
+
+  .swiper-button-next {
+    right: 5px;
+  }
+
+  .swiper-button-disabled {
+    opacity: 1;
+  }
+}
+
+.blog__slider {
+  width: 100%;
+  padding: 20px 0;
+
+  .swiper-wrapper {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .swiper-slide {
+    border-radius: 45px;
+    position: relative;
+    background-color: @basic-gray;
+    overflow: hidden;
+    box-shadow: 6px 6px 15px @basic-shadow;
+  }
+
+  .swiper-slide figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper-slide picture {
+    display: block;
+  }
+
+  .swiper-slide img {
+    border-radius: 45px;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    text-indent: -100vw;
+  }
+
+  .swiper-slide figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(38, 79, 85, 0) -0.03%, @basic-green 59.38%);
+    min-height: 111px;
+    box-sizing: border-box;
+    padding: 47px 10px 0;
+  }
+
+  .swiper-slide h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog__header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .blog__slider-wrapper {
+    padding: 0;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+
+  .blog__slider {
+    padding: 20px;
+    box-sizing: border-box;
+
+    .swiper-slide {
+      border-radius: 20px;
+    }
+
+    .swiper-slide img {
+      border-radius: 20px;
+    }
+
+    .swiper-pagination {
+      position: static;
+      margin-top: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: @basic-green;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.search {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: @basic-white;
+}
+
+.search__form {
+  display: grid;
+  grid-template-columns: 285px 1fr 337px 226px 222px;
+  align-items: flex-end;
+  column-gap: 30px;
+  padding-top: 26px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (max-width: 1500px) {
+  .search__form {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1160px) {
+  .search__form {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    padding: 0 20px;
+    margin: 0 auto;
+    row-gap: 20px;
+  }
+}

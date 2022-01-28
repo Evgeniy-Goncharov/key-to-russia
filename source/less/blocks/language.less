@@ -1,0 +1,39 @@
+.language {
+  justify-self: flex-end;
+
+  @media (max-width: 1200px) {
+    order: -1;
+  }
+}
+
+.language-toggle {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.language-toggle-arabian {
+  background: url("../assets/img/logos/arabian.svg") no-repeat center;
+}
+
+.language-toggle-arabian--active,
+.language-toggle-arabian:hover {
+  background: url("../assets/img/logos/arabian-active.svg") no-repeat center;
+}
+
+.language-toggle-english {
+  background: url("../assets/img/logos/english.png") no-repeat center;
+}
+
+.language-toggle-english--active,
+.language-toggle-english:hover {
+  background: url("../assets/img/logos/english-active.png") no-repeat center;
+}

@@ -1,21 +1,11 @@
 .page-header {
-  background: url("../img/bg/header-bg.jpg") no-repeat center;
-  background-size: cover;
-  height: 1081px;
-  color: @basic-white;
-  max-height: 100vh;
-}
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
-.page-header__wrapper {
-  max-width: 1600px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  height: 100%;
-
-  @media (max-width: 1620px) {
+  p {
     margin: 0;
-    padding-left: 20px;
-    padding-right: 20px;
   }
 }
 
@@ -77,116 +67,22 @@
   }
 }
 
-.header__links {
+.page-header__links {
   display: grid;
-  grid-template-columns: 425px 65px;
+  grid-template-columns: 1fr 70px;
   row-gap: 18px;
-  column-gap: 80px;
-
-  @media (max-width: 1200px) {
-    grid-template-columns: 425px;
-  }
-
-  @media (max-width: 800px) {
-    grid-template-columns: 200px;
-  }
+  column-gap: 83px;
+  padding-bottom: 20px;
 }
 
-.contacts {
-  margin: 0;
-  padding: 0;
-  justify-self: flex-end;
-  list-style: none;
-  display: flex;
-}
-
-.contacts__item:not(:last-child) {
-  margin-right: 14px;
-}
-
-.contacts__link {
-  display: block;
-  margin: 0;
-  padding: 0;
-
-  img {
-    @media (max-width: 600px) {
-      width: 40px;
-      height: 40px;
-    }
+@media (max-width: 1200px) {
+  .page-header__links {
+    grid-template-columns: 1fr;
   }
 }
 
-.language {
-  justify-self: flex-end;
-
-  @media (max-width: 1200px) {
-    order: -1;
-  }
-}
-
-.language-toggle {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: none;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-
-  :first-of-type {
-    margin-right: 10px;
-  }
-}
-
-.language-toggle-arabian {
-  background: url("../img/logos/arabian.svg") no-repeat center;
-}
-
-.language-toggle-arabian--active,
-.language-toggle-arabian:hover {
-  background: url("../img/logos/arabian-active.svg") no-repeat center;
-}
-
-.language-toggle-english {
-  background: url("../img/logos/english.png") no-repeat center;
-}
-
-.language-toggle-english--active,
-.language-toggle-english:hover {
-  background: url("../img/logos/english-active.png") no-repeat center;
-}
-
-.main-nav {
-  justify-self: flex-end;
-
-  @media (max-width: 800px) {
+@media (max-width: 991px) {
+  .page-header__links {
     display: none;
   }
-}
-
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 425px;
-}
-
-.nav-list a {
-  color: @basic-white;
-  text-decoration: none;
-}
-
-.nav__list a {
-  margin-right: 10px;
-}
-
-.nav-item:last-child a {
-  margin: 0;
 }

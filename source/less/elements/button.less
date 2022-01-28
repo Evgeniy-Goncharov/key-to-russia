@@ -7,13 +7,18 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 500;
-  min-width: 317px;
+  width: 100%;
   border-radius: 30px;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
+  text-align: center;
 
-  &:hover {
+  &:hover,
+  &--active,
+  &--green {
     background-color: @basic-green;
     color: @basic-white;
   }
@@ -23,34 +28,51 @@
   }
 
   &--green {
-    background-color: @basic-green;
-    color: @basic-white;
-
     &:hover {
       background-color: @basic-white;
       color: @basic-green;
     }
   }
 
-  &--bordered {
-    border: 3px solid @basic-green;
+  &--big {
+    min-height: 104px;
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: bold;
   }
 
-  &--text-center {
-    text-align: center;
+  &--bordered {
+    border: 3px solid @basic-green;
   }
 
   &--width-400 {
     max-width: 400px;
   }
 
-  &--full-width {
-    width: 100%;
-    max-width: 100%;
+  &--desk-width-317 {
+    max-width: 317px;
   }
 }
 
 input:checked ~ .button {
   background-color: @basic-green;
   color: @basic-white;
+}
+
+@media (max-width: 768px) {
+  .button {
+    &--big {
+      font-size: 24px;
+      line-height: 36px;
+      min-height: 80px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .button {
+    &--desk-width-317 {
+      max-width: 100%;
+    }
+  }
 }

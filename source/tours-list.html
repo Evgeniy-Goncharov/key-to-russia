@@ -11,28 +11,30 @@
 
 <body class="page-tours page-body">
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="container">
       <div class="page-header__top">
         <div class="logo">
-          <a class="logo-link logo__grid" href="index.html">
-            <img class="logo-image logo__image" src="img/logos/logo.svg" alt="Key to Russia" width="48" height="53">
-            <p class="logo-slogan">Your Key to Russia</p>
-            <p class="logo-slogan">Your Gate to the World</p>
+          <a class="logo__link" href="index.html">
+            <div class="logo__grid">
+              <img class="logo__image" src="assets/img/logos/logo.svg" alt="Key to Russia" width="48" height="53">
+              <p>Your Key to Russia</p>
+              <p>Your Gate to the World</p>
+            </div>
           </a>
         </div>
 
-        <div class="header__links">
-          <ul class="contacts">
-            <li class="contacts__item"><a class="contacts__link" href="tel:88008008080"><img src="img/logos/phone.svg"
-                  alt="Call 88008008080" width="25" height="25"></a></li>
-            <li class="contacts__item"><a class="contacts__link" href="#"><img src="img/logos/watsapp.svg" alt="WatsApp"
-                  width="25" height="25"></a></li>
-            <li class="contacts__item"><a class="contacts__link" href="#"><img src="img/logos/instagram.svg"
+        <div class="page-header__links">
+          <ul class="social">
+            <li class="social__item"><a class="social__link" href="tel:88008008080"><img
+                  src="assets/img/logos/phone.svg" alt="Call 88008008080" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="assets/img/logos/watsapp.svg"
+                  alt="WatsApp" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="assets/img/logos/instagram.svg"
                   alt="Instagram" width="25" height="25"></a></li>
-            <li class="contacts__item"><a class="contacts__link" href="#"><img src="img/logos/facebook.svg"
+            <li class="social__item"><a class="social__link" href="#"><img src="assets/img/logos/facebook.svg"
                   alt="Facebook" width="25" height="25"></a></li>
-            <li class="contacts__item"><a class="contacts__link" href="mailto:example@mail.com"><img
-                  src="img/logos/mail.svg" alt="Email: example@mail.com" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="mailto:example@mail.com"><img
+                  src="assets/img/logos/mail.svg" alt="Email: example@mail.com" width="25" height="25"></a></li>
           </ul>
 
           <div class="language">
@@ -42,38 +44,63 @@
           </div>
 
           <nav class="main-nav">
-            <ul class="nav-list nav__list">
-              <li class="nav-item"><a href="#">Our Services</a></li>
-              <li class="nav-item"><a href="#">About As</a></li>
-              <li class="nav-item"><a href="#">Our Tours</a></li>
-              <li class="nav-item"><a href="#">Contact Us</a></li>
+            <ul class="main-nav__list">
+              <li class="menu-item"><a href="#">Our Tours</a></li>
+              <li class="menu-item"><a href="#">Contact Us</a></li>
+              <li class="menu-item"><a href="#">About As</a></li>
+              <li class="menu-item"><a href="#">Our Services</a></li>
+              <li class="menu-item"><a href="#">Blog</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <h1 class="page-heading page__heading">Your key to <span>Russia</span></h1>
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-tours__main">
+    <div class="page-tours__bg-wrapper">
+      <section class="search container">
+        <h2 class="visually-hidden">Search your tour</h2>
+        <form class="search__form form" method="GET" action="">
+          <label class="label label--select label--theme-green">
+            City
+            <select name="city">
+              <option class="search-option">?</option>
+            </select>
+          </label>
+
+          <label class="label label--select label--theme-green">
+            Number of people
+            <select name="people">
+              <option class="search-option">?</option>
+            </select>
+          </label>
+
+          <label class="label label--select label--theme-green">
+            Dates of your jorney
+            <input type="date">
+          </label>
+
+          <label class="label label--select label--theme-green">
+            Type
+            <select name="type">
+              <option class="search-option">?</option>
+            </select>
+          </label>
+          <div>
+            <button class="button" type="submit">Search</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
     <section class="tour-categories">
       <div class="container">
-        <form class="tour-categories__form" method="GET" action="">
-          <label class="tour-categories__label">
-            <input class="visually-hidden" type="radio" name="tour-category" checked>
-            <span class="button button--bordered button--text-center button--full-width">Private</span>
-          </label>
-
-          <label class="tour-categories__label">
-            <input class="visually-hidden" type="radio" name="tour-category">
-            <span class="button button--bordered button--text-center button--full-width">Group</span>
-          </label>
-
-          <label class="tour-categories__label">
-            <input class="visually-hidden" type="radio" name="tour-category">
-            <span class="button button--bordered button--text-center button--full-width">Tours and activities</span>
-          </label>
-        </form>
+        <ul class="tour-categories__list">
+          <li><a class="button button--bordered button--active">Private</a></li>
+          <li><a class="button button--bordered" href="#">Group</a></li>
+          <li><a class="button button--bordered" href="#">Tours and activities</a></li>
+        </ul>
 
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
         </p>
@@ -82,100 +109,100 @@
 
     <div class="page-tours__wrapper container">
       <div class="page-tours__left-column">
-        <aside class="tours-filter">
+        <aside class="filter">
           <h2 class="visually-hidden">Chose parameters of your tour</h2>
-          <form class="form" method="GET" action="">
-            <fieldset class="tours-filter__popularity">
+          <form method="GET" action="">
+            <fieldset class="filter__popularity">
               <legend>Popularity</legend>
-              <label class="tours-filter__label tours-filter__label--popularity">
+              <label class="filter__label filter__label--popularity">
                 <span class="visually-hidden">1 star</span>
                 <input class="visually-hidden" type="radio" name="popularity" checked>
                 <svg width="29" height="27">
-                  <use href="img/sprite.svg#star"></use>
+                  <use href="assets/img/sprite.svg#star"></use>
                 </svg>
               </label>
 
-              <label class="tours-filter__label tours-filter__label--popularity">
+              <label class="filter__label filter__label--popularity">
                 <span class="visually-hidden">1 star</span>
                 <input class="visually-hidden" type="radio" name="popularity">
                 <svg width="29" height="27">
-                  <use href="img/sprite.svg#star"></use>
+                  <use href="assets/img/sprite.svg#star"></use>
                 </svg>
               </label>
 
-              <label class="tours-filter__label tours-filter__label--popularity">
+              <label class="filter__label filter__label--popularity">
                 <span class="visually-hidden">1 star</span>
                 <input class="visually-hidden" type="radio" name="popularity">
                 <svg width="29" height="27">
-                  <use href="img/sprite.svg#star"></use>
+                  <use href="assets/img/sprite.svg#star"></use>
                 </svg>
               </label>
 
-              <label class="tours-filter__label tours-filter__label--popularity">
+              <label class="filter__label filter__label--popularity">
                 <span class="visually-hidden">1 star</span>
                 <input class="visually-hidden" type="radio" name="popularity">
                 <svg width="29" height="27">
-                  <use href="img/sprite.svg#star"></use>
+                  <use href="assets/img/sprite.svg#star"></use>
                 </svg>
               </label>
 
-              <label class="tours-filter__label tours-filter__label--popularity">
+              <label class="filter__label filter__label--popularity">
                 <span class="visually-hidden">1 star</span>
                 <input class="visually-hidden" type="radio" name="popularity">
                 <svg width="29" height="27">
-                  <use href="img/sprite.svg#star"></use>
+                  <use href="assets/img/sprite.svg#star"></use>
                 </svg>
               </label>
             </fieldset>
 
             <fieldset>
               <legend>Price</legend>
-              <div class="tours-filter__price tours-filter__range"></div>
-              <div class="tours-filter__values">
-                <input class="tours-filter__value" name="min-price" type="text" value="100 €" readonly>
-                <input class="tours-filter__value tours-filter__value--text-right" name="max-price" type="text"
-                  value="400 €" readonly>
+              <div class="filter__price filter__range"></div>
+              <div class="filter__values">
+                <input class="filter__value" name="min-price" type="text" value="100 €" readonly>
+                <input class="filter__value filter__value--text-right" name="max-price" type="text" value="400 €"
+                  readonly>
               </div>
             </fieldset>
 
             <fieldset>
               <legend>Duration</legend>
-              <div class="tours-filter__duration tours-filter__range"></div>
-              <div class="tours-filter__values">
-                <input class="tours-filter__value" name="min-duration" type="text" value="3 d" readonly>
-                <input class="tours-filter__value tours-filter__value--text-right" name="max-duration" type="text"
-                  value="9 d" readonly>
+              <div class="filter__duration filter__range"></div>
+              <div class="filter__values">
+                <input class="filter__value" name="min-duration" type="text" value="3 d" readonly>
+                <input class="filter__value filter__value--text-right" name="max-duration" type="text" value="9 d"
+                  readonly>
               </div>
             </fieldset>
 
             <fieldset>
               <legend>Services</legend>
-              <div class="tours-filter__checkbox-wrapper">
-                <label class="tours-filter__label tours-filter__label--radio">
+              <div class="filter__checkbox-wrapper">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="hotel" checked>
                   <span></span>
                   Hotel
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="transport">
                   <span></span>
                   Transport
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="guide">
                   <span></span>
                   Guide
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="alults_only">
                   <span></span>
                   Adults only
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="perfect_for_children">
                   <span></span>
                   Perfect for children
@@ -185,38 +212,38 @@
 
             <fieldset>
               <legend>Cities</legend>
-              <div class="tours-filter__checkbox-wrapper">
-                <label class="tours-filter__label tours-filter__label--radio">
+              <div class="filter__checkbox-wrapper">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="moscow" checked>
                   <span></span>
                   Moscow
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="st_petersburg">
                   <span></span>
                   St. Peterburg
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="sochi">
                   <span></span>
                   Sochi
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="kaliningrad">
                   <span></span>
                   Kaliningrad
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="baikal_lake">
                   <span></span>
                   Baikal Lake
                 </label>
 
-                <label class="tours-filter__label tours-filter__label--radio">
+                <label class="filter__label filter__label--checkbox">
                   <input class="visually-hidden" type="checkbox" name="murmansk">
                   <span></span>
                   Murmansk
@@ -232,29 +259,33 @@
           <h2 class="visually-hidden">?</h2>
           <ul class="tours-list__wrapper">
             <li class="tours-list__item">
+
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="img/tour-card/img-01--desktop.jpg"
-                    srcset="img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
+                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
-                    <h3 class="tour-card__heading">Moscow and<br> St. Peterburg holiday</h3>
-                    <span class="tour-card__popularity">
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                    <a class="tour-card__link" href="tour-info.html">
+                      <h3 class="tour-card__heading">Moscow and<br> St. Peterburg holiday</h3>
+                    </a>
+
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </header>
@@ -306,27 +337,27 @@
             <li>
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="img/tour-card/img-02--desktop.jpg"
-                    srcset="img/tour-card/img-02--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/tour-card/img-02--desktop.jpg"
+                    srcset="assets/img/tour-card/img-02--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
                     <h3 class="tour-card__heading">Moscow holiday</h3>
-                    <span class="tour-card__popularity">
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </header>
@@ -375,27 +406,27 @@
             <li>
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="img/tour-card/img-01--desktop.jpg"
-                    srcset="img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
+                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
                     <h3 class="tour-card__heading">Moscow holiday</h3>
-                    <span class="tour-card__popularity">
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </header>
@@ -447,27 +478,27 @@
             <li>
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="img/tour-card/img-01--desktop.jpg"
-                    srcset="img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
+                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
                     <h3 class="tour-card__heading">Moscow holiday</h3>
-                    <span class="tour-card__popularity">
-                      <svg class="tour-card__star tour-card__star--filled">
-                        <use href="img/sprite.svg#star"></use>
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
-                      <svg class="tour-card__star">
-                        <use href="img/sprite.svg#star"></use>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
                       </svg>
                     </span>
                   </header>
@@ -533,21 +564,24 @@
       <h2 class="gallery__heading section__heading--white section-heading gallery__wrapper">Enjoy Russia</h2>
       <ul class="gallery-list">
         <li class="gallery-item">
-          <img class="gallery__image--mobile-hidden" src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
-          <img src="img/gallery/image-2.jpg" alt="?" width="415" height="465">
-          <img src="img/gallery/image-3.jpg" alt="?" width="415" height="465">
+          <img class="gallery__image--mobile-hidden" src="assets/img/gallery/image-1.jpg" alt="?" width="840"
+            height="316">
+          <img src="assets/img/gallery/image-2.jpg" alt="?" width="415" height="465">
+          <img src="assets/img/gallery/image-3.jpg" alt="?" width="415" height="465">
         </li>
 
         <li class="gallery-item">
-          <img src="img/gallery/image-4.jpg" alt="?" width="412" height="465">
-          <img src="img/gallery/image-5.jpg" alt="?" width="412" height="465">
-          <img class="gallery__image--mobile-hidden" src="img/gallery/image-6.jpg" alt="?" width="843" height="316">
+          <img src="assets/img/gallery/image-4.jpg" alt="?" width="412" height="465">
+          <img src="assets/img/gallery/image-5.jpg" alt="?" width="412" height="465">
+          <img class="gallery__image--mobile-hidden" src="assets/img/gallery/image-6.jpg" alt="?" width="843"
+            height="316">
         </li>
 
         <li class="gallery-item">
-          <img class="gallery__image--mobile-hidden" src="img/gallery/image-1.jpg" alt="?" width="840" height="316">
-          <img src="img/gallery/image-2.jpg" alt="?" width="415" height="465">
-          <img src="img/gallery/image-3.jpg" alt="?" width="415" height="465">
+          <img class="gallery__image--mobile-hidden" src="assets/img/gallery/image-1.jpg" alt="?" width="840"
+            height="316">
+          <img src="assets/img/gallery/image-2.jpg" alt="?" width="415" height="465">
+          <img src="assets/img/gallery/image-3.jpg" alt="?" width="415" height="465">
         </li>
 
         <li class="gallery-controls">
@@ -582,10 +616,12 @@
   <footer class="page-footer">
     <div class="footer__wrapper">
       <div class="logo logo--small">
-        <a class="logo-link logo__grid" href="">
-          <img class="logo__image" src="img/logos/logo.svg" alt="Key to Russia" width="39" height="43">
-          <p class="logo-slogan">Your Key to Russia</p>
-          <p class="logo-slogan">Your Gate to the World</p>
+        <a class="logo__link " href="">
+          <div class="logo__grid">
+            <img class="logo__image" src="assets/img/logos/logo.svg" alt="Key to Russia" width="39" height="43">
+            <p>Your Key to Russia</p>
+            <p>Your Gate to the World</p>
+          </div>
         </a>
       </div>
 
@@ -596,11 +632,11 @@
       </div>
 
       <div class="footer-contacts__wrapper">
-        <a class="contacts-link contacts__link--big" href="#"><img src="img/logos/watsapp.svg" alt="WatsApp" width="40"
-            height="40"></a>
-        <a class="contacts-link contacts__link--big" href="#"><img src="img/logos/instagram.svg" alt="Instagram"
+        <a class="contacts-link contacts__link--big" href="#"><img src="assets/img/logos/watsapp.svg" alt="WatsApp"
             width="40" height="40"></a>
-        <a class="contacts-link contacts__link--big" href="#"><img src="img/logos/instagram.svg" alt="Instagram"
+        <a class="contacts-link contacts__link--big" href="#"><img src="assets/img/logos/instagram.svg" alt="Instagram"
+            width="40" height="40"></a>
+        <a class="contacts-link contacts__link--big" href="#"><img src="assets/img/logos/instagram.svg" alt="Instagram"
             width="40" height="40"></a>
       </div>
     </div>

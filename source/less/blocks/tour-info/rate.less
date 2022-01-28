@@ -1,0 +1,53 @@
+.rate {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.rate__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+}
+
+.rate__card {
+  border: 3px solid @basic-green;
+  border-radius: 30px;
+  padding: 26px 26px 21px;
+  color: @basic-green;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 24px;
+
+  h3 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  ul {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+  }
+
+  small {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .rate__list {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}

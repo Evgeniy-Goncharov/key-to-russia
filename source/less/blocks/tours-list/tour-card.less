@@ -18,7 +18,7 @@
 }
 
 .tour-card__content {
-  padding: 56px 50px 50px 50px;
+  padding: 56px 50px 25px 50px;
   width: 100%;
   box-sizing: border-box;
   display: flex;
@@ -33,6 +33,10 @@
   align-items: flex-start;
 }
 
+.tour-card__link {
+  text-decoration: none;
+}
+
 .tour-card__heading {
   font-size: 36px;
   line-height: 38px;
@@ -40,29 +44,7 @@
   color: @basic-green;
   margin: 0;
   margin-bottom: 30px;
-}
-
-.tour-card__popularity {
-  display: flex;
-  justify-content: flex-end;
-  padding-top: 10px;
-}
-
-.tour-card__star {
-  display: block;
-  width: 29px;
-  height: 27px;
-  stroke: @basic-yellow;
-  fill: none;
-  margin-right: 8px;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &--filled {
-    fill: @basic-yellow;
-  }
+  text-decoration: none;
 }
 
 .tour-card__footer {
@@ -118,11 +100,11 @@
   }
 
   &--hotel {
-    background-image: url("../img/icons/hotel.svg");
+    background-image: url("../assets/img/icons/hotel.svg");
   }
 
   &--transport {
-    background-image: url("../img/icons/transport.svg");
+    background-image: url("../assets/img/icons/transport.svg");
   }
 }
 

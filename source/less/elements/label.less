@@ -1,0 +1,119 @@
+.label {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 500;
+  color: @basic-green;
+
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 3px solid @basic-green;
+    border-radius: 30px;
+    min-height: 72px;
+    box-sizing: border-box;
+    margin-top: 25px;
+
+    &::placeholder {
+      color: @basic-green;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--popularity {
+    margin-right: 10px;
+
+    svg {
+      width: 27px;
+      height: 29px;
+      display: block;
+      stroke: @basic-white;
+      fill: none;
+    }
+
+    input:checked ~ svg {
+      fill: @basic-white;
+    }
+  }
+
+  &--checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid @basic-white;
+      border-radius: 50%;
+      margin-right: 13px;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    input:checked ~ span::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background-color: @basic-white;
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  &--checkbox-green {
+    span {
+      border: 2px solid @basic-green;
+    }
+
+    input:checked ~ span::before {
+      background-color: @basic-green;
+    }
+  }
+
+  &--select {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--select select {
+    padding: 10px 20px;
+    border: 3px solid @basic-green;
+    outline: none;
+    border-radius: 30px;
+    font-size: 21px;
+    line-height: 26px;
+    color: @basic-green;
+    width: 100%;
+    min-height: 72px;
+    margin-top: 20px;
+  }
+
+  &--small-text {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  &--theme-green {
+    color: @basic-white;
+
+    select,
+    input {
+      border: 3px solid @basic-white;
+      background-color: @basic-green;
+      color: @basic-white;
+    }
+  }
+}
