@@ -768,6 +768,13 @@ input:checked ~ .button {
   background-color: #264F55;
   color: #FFFFFF;
 }
+.label--theme-green select::-moz-placeholder, .label--theme-green input::-moz-placeholder {
+  color: #FFFFFF;
+}
+.label--theme-green select::placeholder,
+.label--theme-green input::placeholder {
+  color: #FFFFFF;
+}
 .fieldset {
   border: none;
   padding: 0;
@@ -1659,8 +1666,8 @@ input:checked ~ .button {
 .gallery-button-next {
   background: #FFFFFF url("../assets/img/logos/next.svg") no-repeat center;
 }
-.contacts-section {
-  max-width: 1130px;
+.contacts {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -1668,12 +1675,12 @@ input:checked ~ .button {
   background: url("../assets/img/bg/phone.png") no-repeat center left;
 }
 @media (max-width: 750px) {
-  .contacts-section {
+  .contacts {
     background: transparent;
   }
 }
 .contacts__heading {
-  margin-bottom: 62px;
+  margin-bottom: 20px;
 }
 @media (max-width: 850px) {
   .contacts__heading {
@@ -1688,43 +1695,26 @@ input:checked ~ .button {
     line-height: 50px;
   }
 }
-.user__info {
+.contacts__form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 186px;
+  margin-bottom: 202px;
+  width: 100%;
+  max-width: 670px;
 }
 @media (max-width: 750px) {
-  .user__info {
+  .contacts__form {
     width: 100%;
     margin-bottom: 20px;
   }
 }
-@media (max-width: 750px) {
-  .user__info label {
-    width: 100%;
-  }
-}
-.user__info input {
-  width: 678px;
-  margin-bottom: 22px;
-}
-.user__info input::-moz-placeholder {
-  color: #FFFFFF;
-}
-.user__info input::placeholder {
-  color: #FFFFFF;
-}
-@media (max-width: 750px) {
-  .user__info input {
-    width: 100%;
-  }
-}
-.submit-button {
+.contacts__submit-button {
   width: 304px;
+  margin-top: 20px;
 }
 @media (max-width: 750px) {
-  .submit-button {
+  .contacts__submit-button {
     width: 100%;
     align-self: center;
   }

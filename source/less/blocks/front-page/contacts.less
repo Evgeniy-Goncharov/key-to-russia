@@ -1,5 +1,5 @@
-.contacts-section {
-  max-width: 1130px;
+.contacts {
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .contacts__heading {
-  margin-bottom: 62px;
+  margin-bottom: 20px;
 
   @media (max-width: 850px) {
     font-size: 50px;
@@ -26,11 +26,13 @@
   }
 }
 
-.user__info {
+.contacts__form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-bottom: 186px;
+  margin-bottom: 202px;
+  width: 100%;
+  max-width: 670px;
 
   @media (max-width: 750px) {
     width: 100%;
@@ -38,27 +40,9 @@
   }
 }
 
-.user__info label {
-  @media (max-width: 750px) {
-    width: 100%;
-  }
-}
-
-.user__info input {
-  width: 678px;
-  margin-bottom: 22px;
-
-  &::placeholder {
-    color: @basic-white;
-  }
-
-  @media (max-width: 750px) {
-    width: 100%;
-  }
-}
-
-.submit-button {
+.contacts__submit-button {
   width: 304px;
+  margin-top: 20px;
 
   @media (max-width: 750px) {
     width: 100%;
