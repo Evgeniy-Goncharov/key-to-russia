@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key to Russia</title>
+  <link href="css/nouislider.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="page-tours page-body">
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            <div class="logo__grid">
+              <img class="logo__image" src="assets/img/logos/logo.svg" alt="Key to Russia" width="48" height="53">
+              <p>Your Key to Russia</p>
+              <p>Your Gate to the World</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="page-header__links">
+          <ul class="social">
+            <li class="social__item"><a class="social__link" href="tel:88008008080"><img
+                  src="assets/img/logos/phone.svg" alt="Call 88008008080" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="assets/img/logos/watsapp.svg"
+                  alt="WatsApp" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="assets/img/logos/instagram.svg"
+                  alt="Instagram" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="#"><img src="assets/img/logos/facebook.svg"
+                  alt="Facebook" width="25" height="25"></a></li>
+            <li class="social__item"><a class="social__link" href="mailto:example@mail.com"><img
+                  src="assets/img/logos/mail.svg" alt="Email: example@mail.com" width="25" height="25"></a></li>
+          </ul>
+
+          <div class="language">
+            <button class="language-toggle language-toggle-arabian" type="button" aria-label="Arabian"></button>
+            <button class="language-toggle language-toggle-english language-toggle-english--active" type="button"
+              aria-label="English"></button>
+          </div>
+
+          <nav class="main-nav">
+            <ul class="main-nav__list">
+              <li class="menu-item"><a href="#">Our Tours</a></li>
+              <li class="menu-item"><a href="#">Contact Us</a></li>
+              <li class="menu-item"><a href="#">About As</a></li>
+              <li class="menu-item"><a href="#">Our Services</a></li>
+              <li class="menu-item"><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-tours__main">
+    <div class="page-tours__bg-wrapper">
+      <section class="search container">
+        <h2 class="visually-hidden">Search your tour</h2>
+        <form class="search__form form" method="GET" action="">
+          <label class="label label--select label--theme-green">
+            City
+            <select name="city">
+              <option class="search-option">?</option>
+            </select>
+          </label>
+
+          <label class="label label--select label--theme-green">
+            Number of people
+            <select name="people">
+              <option class="search-option">?</option>
+            </select>
+          </label>
+
+          <label class="label label--select label--theme-green">
+            Dates of your jorney
+            <input type="date">
+          </label>
+
+          <label class="label label--select label--theme-green">
+            Type
+            <select name="type">
+              <option class="search-option">?</option>
+            </select>
+          </label>
+          <div>
+            <button class="button" type="submit">Search</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <section class="tour-categories">
+      <div class="container">
+        <ul class="tour-categories__list">
+          <li><a class="button button--bordered">Private</a></li>
+          <li><a class="button button--bordered button--active" href="#">Group</a></li>
+          <li><a class="button button--bordered" href="#">Tours and activities</a></li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+        </p>
+      </div>
+    </section>
+
+    <div class="page-tours__wrapper container">
+      <div class="page-tours__left-column">
+        <aside class="filter">
+          <h2 class="visually-hidden">Chose parameters of your tour</h2>
+          <form method="GET" action="">
+            <fieldset>
+              <legend>People</legend>
+              <div class="filter__people filter__range"></div>
+              <div class="filter__values">
+                <input class="filter__value" name="min-people" type="text" value="0" readonly>
+                <input class="filter__value filter__value--text-right" name="max-people" type="text" value="50"
+                  readonly>
+              </div>
+            </fieldset>
+
+            <fieldset class="filter__popularity">
+              <legend>Popularity</legend>
+              <label class="filter__label filter__label--popularity">
+                <span class="visually-hidden">1 star</span>
+                <input class="visually-hidden" type="radio" name="popularity" checked>
+                <svg width="29" height="27">
+                  <use href="assets/img/sprite.svg#star"></use>
+                </svg>
+              </label>
+
+              <label class="filter__label filter__label--popularity">
+                <span class="visually-hidden">1 star</span>
+                <input class="visually-hidden" type="radio" name="popularity">
+                <svg width="29" height="27">
+                  <use href="assets/img/sprite.svg#star"></use>
+                </svg>
+              </label>
+
+              <label class="filter__label filter__label--popularity">
+                <span class="visually-hidden">1 star</span>
+                <input class="visually-hidden" type="radio" name="popularity">
+                <svg width="29" height="27">
+                  <use href="assets/img/sprite.svg#star"></use>
+                </svg>
+              </label>
+
+              <label class="filter__label filter__label--popularity">
+                <span class="visually-hidden">1 star</span>
+                <input class="visually-hidden" type="radio" name="popularity">
+                <svg width="29" height="27">
+                  <use href="assets/img/sprite.svg#star"></use>
+                </svg>
+              </label>
+
+              <label class="filter__label filter__label--popularity">
+                <span class="visually-hidden">1 star</span>
+                <input class="visually-hidden" type="radio" name="popularity">
+                <svg width="29" height="27">
+                  <use href="assets/img/sprite.svg#star"></use>
+                </svg>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Price</legend>
+              <div class="filter__price filter__range"></div>
+              <div class="filter__values">
+                <input class="filter__value" name="min-price" type="text" value="100 €" readonly>
+                <input class="filter__value filter__value--text-right" name="max-price" type="text" value="400 €"
+                  readonly>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Duration</legend>
+              <div class="filter__duration filter__range"></div>
+              <div class="filter__values">
+                <input class="filter__value" name="min-duration" type="text" value="3 d" readonly>
+                <input class="filter__value filter__value--text-right" name="max-duration" type="text" value="9 d"
+                  readonly>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Services included</legend>
+              <div class="filter__checkbox-wrapper">
+                <label class="filter__label filter__label--checkbox">
+                  <input class="visually-hidden" type="checkbox" name="hotel" checked>
+                  <span></span>
+                  Hotel
+                </label>
+
+                <label class="filter__label filter__label--checkbox">
+                  <input class="visually-hidden" type="checkbox" name="transport">
+                  <span></span>
+                  Transport
+                </label>
+
+                <label class="filter__label filter__label--checkbox">
+                  <input class="visually-hidden" type="checkbox" name="guide">
+                  <span></span>
+                  Guide
+                </label>
+
+                <label class="filter__label filter__label--checkbox">
+                  <input class="visually-hidden" type="checkbox" name="alults_only">
+                  <span></span>
+                  Adults only
+                </label>
+
+                <label class="filter__label filter__label--checkbox">
+                  <input class="visually-hidden" type="checkbox" name="perfect_for_children">
+                  <span></span>
+                  Perfect for children
+                </label>
+              </div>
+            </fieldset>
+          </form>
+        </aside>
+      </div>
+
+      <div>
+        <section class="tours-list">
+          <h2 class="visually-hidden">?</h2>
+          <ul class="tours-list__wrapper">
+            <li class="tours-list__item">
+              <article class="tour-card">
+                <picture>
+                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
+                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                </picture>
+                <div class="tour-card__content">
+                  <header class="tour-card__header">
+                    <a class="tour-card__link" href="tour-info.html">
+                      <h3 class="tour-card__heading">Week in Moscow</h3>
+                    </a>
+
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                    </span>
+                  </header>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit
+                  </p>
+
+                  <div class="tour-card__footer">
+                    <div class="tour-card__includes">
+                      <h4 class="tour-card__inner-heading">Includes</h4>
+                      <ul class="tour-card__includes-list">
+                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
+                          <span class="visually-hidden">Hotel</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--transport">
+                          <span class="visually-hidden">Transport</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--more">
+                          <span>+2</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tour-card__cities">
+                      <h4 class="tour-card__inner-heading">Cities</h4>
+                      <ul class="tour-card__cities-list">
+                        <li>Moscow</li>
+                        <li>St. Peterburg</li>
+                        <li>More cities</li>
+                      </ul>
+                    </div>
+
+                    <div class="tour-card__group">
+                      <h4 class="tour-card__inner-heading">Group</h4>
+                      <p>5 seats left</p>
+                      <span class="tour-card__value">20</span>
+                    </div>
+
+                    <div class="tour-card__price">
+                      <h4 class="tour-card__inner-heading">Price</h4>
+                      <span>from</span>
+                      <span class="tour-card__value">200$</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="tour-card">
+                <picture>
+                  <img class="tour-card__image" src="assets/img/tour-card/img-02--desktop.jpg"
+                    srcset="assets/img/tour-card/img-02--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                </picture>
+
+                <div class="tour-card__content">
+                  <header class="tour-card__header">
+                    <h3 class="tour-card__heading">Week in Moscow</h3>
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                    </span>
+                  </header>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit
+                  </p>
+
+                  <div class="tour-card__footer">
+                    <div class="tour-card__includes">
+                      <h4 class="tour-card__inner-heading">Includes</h4>
+                      <ul class="tour-card__includes-list">
+                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
+                          <span class="visually-hidden">Hotel</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--transport">
+                          <span class="visually-hidden">Transport</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--air">
+                          <span class="visually-hidden">Air</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tour-card__group">
+                      <h4 class="tour-card__inner-heading">Group</h4>
+                      <p>5 seats left</p>
+                      <span class="tour-card__value">20</span>
+                    </div>
+
+                    <div class="tour-card__price">
+                      <h4 class="tour-card__inner-heading">Price</h4>
+                      <span>from</span>
+                      <span class="tour-card__value">200$</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="tour-card">
+                <picture>
+                  <img class="tour-card__image" src="assets/img/tour-card/img-02--desktop.jpg"
+                    srcset="assets/img/tour-card/img-02--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                </picture>
+
+                <div class="tour-card__content">
+                  <header class="tour-card__header">
+                    <h3 class="tour-card__heading">Week in Moscow</h3>
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                    </span>
+                  </header>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit
+                  </p>
+
+                  <div class="tour-card__footer">
+                    <div class="tour-card__includes">
+                      <h4 class="tour-card__inner-heading">Includes</h4>
+                      <ul class="tour-card__includes-list">
+                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
+                          <span class="visually-hidden">Hotel</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--transport">
+                          <span class="visually-hidden">Transport</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--air">
+                          <span class="visually-hidden">Air</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tour-card__group">
+                      <h4 class="tour-card__inner-heading">Group</h4>
+                      <p>5 seats left</p>
+                      <span class="tour-card__value">20</span>
+                    </div>
+
+                    <div class="tour-card__price">
+                      <h4 class="tour-card__inner-heading">Price</h4>
+                      <span>from</span>
+                      <span class="tour-card__value">200$</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="tour-card">
+                <picture>
+                  <img class="tour-card__image" src="assets/img/tour-card/img-02--desktop.jpg"
+                    srcset="assets/img/tour-card/img-02--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                </picture>
+
+                <div class="tour-card__content">
+                  <header class="tour-card__header">
+                    <h3 class="tour-card__heading">Week in Moscow</h3>
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                    </span>
+                  </header>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit
+                  </p>
+
+                  <div class="tour-card__footer">
+                    <div class="tour-card__includes">
+                      <h4 class="tour-card__inner-heading">Includes</h4>
+                      <ul class="tour-card__includes-list">
+                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
+                          <span class="visually-hidden">Hotel</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--transport">
+                          <span class="visually-hidden">Transport</span>
+                        </li>
+                        <li class="tour-card__includes-item tour-card__includes-item--air">
+                          <span class="visually-hidden">Air</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="tour-card__group">
+                      <h4 class="tour-card__inner-heading">Group</h4>
+                      <p>5 seats left</p>
+                      <span class="tour-card__value">20</span>
+                    </div>
+
+                    <div class="tour-card__price">
+                      <h4 class="tour-card__inner-heading">Price</h4>
+                      <span>from</span>
+                      <span class="tour-card__value">200$</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <ul class="pagination">
+          <li class="pagination__item pagination__item--current"><a href="">1</a></li>
+          <li class="pagination__item"><a href="">2</a></li>
+          <li class="pagination__item"><a href="">3</a></li>
+          <li class="pagination__item"><a href="">4</a></li>
+          <li class="pagination__item"><a href="">5</a></li>
+          <li class="pagination__item"><a href="">6</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="gallery">
+      <h2 class="gallery__heading section__heading--white section-heading gallery__wrapper">Enjoy Russia</h2>
+      <ul class="gallery-list">
+        <li class="gallery-item">
+          <img class="gallery__image--mobile-hidden" src="assets/img/gallery/image-1.jpg" alt="?" width="840"
+            height="316">
+          <img src="assets/img/gallery/image-2.jpg" alt="?" width="415" height="465">
+          <img src="assets/img/gallery/image-3.jpg" alt="?" width="415" height="465">
+        </li>
+
+        <li class="gallery-item">
+          <img src="assets/img/gallery/image-4.jpg" alt="?" width="412" height="465">
+          <img src="assets/img/gallery/image-5.jpg" alt="?" width="412" height="465">
+          <img class="gallery__image--mobile-hidden" src="assets/img/gallery/image-6.jpg" alt="?" width="843"
+            height="316">
+        </li>
+
+        <li class="gallery-item">
+          <img class="gallery__image--mobile-hidden" src="assets/img/gallery/image-1.jpg" alt="?" width="840"
+            height="316">
+          <img src="assets/img/gallery/image-2.jpg" alt="?" width="415" height="465">
+          <img src="assets/img/gallery/image-3.jpg" alt="?" width="415" height="465">
+        </li>
+
+        <li class="gallery-controls">
+          <button class="gallery-button gallery-button-back"><span class="visually-hidden">Back</span></button>
+          <button class="gallery-button gallery-button-next"><span class="visually-hidden">Next</span></button>
+        </li>
+      </ul>
+
+      <div class="contacts">
+        <h2 class="contacts__heading section-heading section__heading--white">Contact Us</h2>
+        <form class="contacts__form" method="POST" action="">
+          <label class="label label--theme-green">
+            <span class="visually-hidden">Name and surname</span>
+            <input type="text" placeholder="Name and surname">
+          </label>
+
+          <label class="label label--theme-green">
+            <span class="visually-hidden">Email</span>
+            <input type="email" placeholder="Email">
+          </label>
+
+          <label class="label label--theme-green">
+            <span class="visually-hidden">Phone</span>
+            <input type="number" placeholder="Phone">
+          </label>
+          <button class="button contacts__submit-button" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="footer__wrapper">
+      <div class="logo logo--small">
+        <a class="logo__link " href="">
+          <div class="logo__grid">
+            <img class="logo__image" src="assets/img/logos/logo.svg" alt="Key to Russia" width="39" height="43">
+            <p>Your Key to Russia</p>
+            <p>Your Gate to the World</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-links__wrapper">
+        <a class="footer__link" href="tel:+79305555555">+7 930 555 55 55</a>
+        <a class="footer__link" href="mailto:info@alist.com">info@alist.com</a>
+        <p>Ul, Gorcogo 24333 d12, Moscow</p>
+      </div>
+
+      <div class="footer-contacts__wrapper">
+        <a class="contacts-link contacts__link--big" href="#"><img src="assets/img/logos/watsapp.svg" alt="WatsApp"
+            width="40" height="40"></a>
+        <a class="contacts-link contacts__link--big" href="#"><img src="assets/img/logos/instagram.svg" alt="Instagram"
+            width="40" height="40"></a>
+        <a class="contacts-link contacts__link--big" href="#"><img src="assets/img/logos/instagram.svg" alt="Instagram"
+            width="40" height="40"></a>
+      </div>
+    </div>
+    <p class="footer__copy">Copyright © 2021 Alist. Все права защищены</p>
+
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="js/nouislider.min.js"></script>
+</body>
+
+</html>

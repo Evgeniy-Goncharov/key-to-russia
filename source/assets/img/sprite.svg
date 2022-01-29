@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="back" viewBox="0 0 19 32"><g fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="air" viewBox="0 0 27 27"><g fill="none">
+<path d="M26.2372 0.762816C25.2052 -0.26909 23.5269 -0.251846 22.5164 0.801101L16.9853 6.56481L3.48738 2.09784L0.653906 4.93136L11.9049 11.8588L6.2119 17.7911L2.56104 17.1917L0 19.7528L5.3673 21.6327L7.24723 27L9.80828 24.439L9.2089 20.7881L15.1412 15.0952L22.0686 26.3461L24.9022 23.5126L20.4353 10.0146L26.1989 4.48359C27.2519 3.4731 27.2691 1.79477 26.2372 0.762816Z" fill="white"/>
+</g></symbol><symbol id="back" viewBox="0 0 19 32"><g fill="none">
 <path d="M16 28.46L3.59998 16.0601L16 3.66016" fill="#264F55"/>
 <path d="M16 28.46L3.59998 16.0601L16 3.66016" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol><symbol id="hotel" viewBox="0 0 60 60"><g fill="none">

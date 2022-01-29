@@ -2109,6 +2109,9 @@ input:checked ~ .button {
   line-height: 22px;
   font-weight: normal;
 }
+.tour-card__footer p {
+  margin: 0;
+}
 .tour-card__inner-heading {
   color: #000000;
   font-size: 21px;
@@ -2153,13 +2156,16 @@ input:checked ~ .button {
 .tour-card__includes-item--transport {
   background-image: url("../assets/img/icons/transport.svg");
 }
+.tour-card__includes-item--air {
+  background-image: url("../assets/img/icons/air.svg");
+}
 .tour-card__cities-list {
   padding: 0;
   margin: 0;
   margin-right: 20px;
   list-style: none;
 }
-.tour-card__price-value {
+.tour-card__value {
   display: block;
   color: #264F55;
   font-size: 48px;
