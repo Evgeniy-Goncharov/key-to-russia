@@ -451,6 +451,11 @@ input:checked ~ .button {
   color: #FFFFFF;
 }
 @media (max-width: 768px) {
+  .button {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 13px;
+  }
   .button--big {
     font-size: 24px;
     line-height: 36px;
@@ -504,7 +509,7 @@ input:checked ~ .button {
     grid-template-columns: -webkit-min-content;
     grid-template-columns: min-content;
   }
-  p {
+  .logo p {
     display: none;
   }
 }
@@ -775,6 +780,25 @@ input:checked ~ .button {
 .label--theme-green input::placeholder {
   color: #FFFFFF;
 }
+@media (max-width: 768px) {
+  .label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .label input {
+    min-height: 48px;
+    margin-top: 10px;
+  }
+  .label--select select {
+    font-size: 14px;
+    line-height: 24px;
+    min-height: 48px;
+  }
+  .label--small-text {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 .fieldset {
   border: none;
   padding: 0;
@@ -786,6 +810,11 @@ input:checked ~ .button {
 }
 .fieldset--flex label {
   margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .fieldset--flex {
+    flex-direction: column;
+  }
 }
 .section-heading {
   margin-bottom: 50px;
@@ -815,6 +844,9 @@ input:checked ~ .button {
 }
 .page-header p {
   margin: 0;
+}
+.page-header--green {
+  background-color: #264F55;
 }
 .page-header__top {
   padding-top: 23px;
@@ -2212,7 +2244,7 @@ input:checked ~ .button {
   }
 }
 .tour {
-  padding-top: 53px;
+  padding-top: 170px;
 }
 .tour__image-wrapper {
   background-color: #F1F1F1;
@@ -2247,6 +2279,9 @@ input:checked ~ .button {
   margin-bottom: 55px;
 }
 @media (max-width: 1200px) {
+  .tour {
+    padding-top: 208px;
+  }
   .tour__wrapper {
     display: block;
   }
@@ -2254,10 +2289,12 @@ input:checked ~ .button {
     padding-left: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .tour {
-    padding-top: 20px;
+    padding-top: 121px;
   }
+}
+@media (max-width: 768px) {
   .tour__image {
     margin-bottom: 20px;
   }
@@ -2367,6 +2404,8 @@ input:checked ~ .button {
   .traveler-map__form p {
     margin-bottom: 10px;
   }
+}
+@media (max-width: 576px) {
   .traveler-map__form fieldset,
   .traveler-map__form fieldset:last-child {
     margin-right: 0;
@@ -2392,6 +2431,7 @@ input:checked ~ .button {
 @media (max-width: 768px) {
   .specifications {
     padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 .specification {
@@ -2409,17 +2449,24 @@ input:checked ~ .button {
   margin-bottom: 16px;
 }
 .specification__image-wrapper {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: 538px;
+  min-width: 538px;
+  height: 300px;
   background-color: #F1F1F1;
   border-radius: 30px;
 }
+.specification__image-wrapper picture {
+  display: block;
+  height: 100%;
+}
 .specification__image {
-  width: 538px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
   text-indent: -100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
 }
 .specification__content {
   padding-left: 30px;
@@ -2436,11 +2483,10 @@ input:checked ~ .button {
   grid-template-columns: 175px 393px 1fr;
 }
 @media (max-width: 1400px) {
-  .specification__image {
+  .specification__image-wrapper {
     width: 359px;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    min-width: 359px;
+    height: 250px;
   }
 }
 @media (max-width: 768px) {
@@ -2449,6 +2495,15 @@ input:checked ~ .button {
   }
   .specification__wrapper p {
     margin: 10px 0;
+  }
+  .specification__image-wrapper {
+    min-width: auto;
+    max-width: 359px;
+    width: 100%;
+    height: 200px;
+  }
+  .specification__image {
+    height: 200px;
   }
   .specification__heading {
     font-size: 24px;
@@ -2459,6 +2514,15 @@ input:checked ~ .button {
   }
   .specification__form {
     grid-template-columns: 100px 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .specification__form {
+    grid-template-columns: 1fr;
+  }
+  .specification__form label {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 .rate {
@@ -2509,12 +2573,38 @@ input:checked ~ .button {
     gap: 30px;
   }
 }
+@media (max-width: 768px) {
+  .rate {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .rate__card {
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .rate__card h3 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .rate__list {
+    grid-template-columns: 1fr;
+  }
+}
 .guide {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .guide__heading {
   margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .guide {
+    padding: 10px 0;
+  }
 }
 .additional {
   padding-top: 50px;
@@ -2531,6 +2621,16 @@ input:checked ~ .button {
   line-height: 32px;
   font-weight: normal;
 }
+@media (max-width: 768px) {
+  .additional {
+    padding: 10px 0;
+  }
+  .additional__form label {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+}
 .feedback {
   padding-top: 25px;
   padding-bottom: 106px;
@@ -2541,11 +2641,33 @@ input:checked ~ .button {
   gap: 30px;
   padding-right: 25px;
   margin-bottom: 25px;
+  align-items: flex-end;
 }
 .feedback__confidentiality {
   font-size: 21px;
   line-height: 32px;
   font-weight: 300;
+}
+@media (max-width: 1400px) {
+  .feedback {
+    padding: 10px 0;
+  }
+  .feedback__fieldset {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .feedback__confidentiality {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 576px) {
+  .feedback__fieldset {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 }
 .includes {
   padding: 10px 30px;
@@ -2553,6 +2675,8 @@ input:checked ~ .button {
   box-sizing: border-box;
   background: #F1F1F1;
   border-radius: 30px;
+  max-width: 377px;
+  margin-left: auto;
 }
 .includes h2 {
   font-style: normal;
@@ -2598,6 +2722,31 @@ input:checked ~ .button {
 }
 .includes__price p {
   margin: 0;
+}
+@media (max-width: 768px) {
+  .includes {
+    min-height: 400px;
+  }
+  .includes h2 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .includes ul {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 0;
+  }
+  .includes__info {
+    font-size: 12px;
+    line-height: 18px;
+    width: 18px;
+    height: 18px;
+  }
+  .includes__price {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
 }
 .main-nav {
   justify-self: flex-end;

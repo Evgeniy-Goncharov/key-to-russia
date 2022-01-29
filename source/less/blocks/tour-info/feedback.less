@@ -9,10 +9,36 @@
   gap: 30px;
   padding-right: 25px;
   margin-bottom: 25px;
+  align-items: flex-end;
 }
 
 .feedback__confidentiality {
   font-size: 21px;
   line-height: 32px;
   font-weight: 300;
+}
+
+@media (max-width: 1400px) {
+  .feedback {
+    padding: 10px 0;
+  }
+
+  .feedback__fieldset {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback__confidentiality {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback__fieldset {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 }
