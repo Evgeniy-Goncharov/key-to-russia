@@ -58,6 +58,7 @@
   </header>
 
   <main class="page-tours__main">
+    <h1 class="visually-hidden">Tours and activities</h1>
     <div class="page-tours__bg-wrapper">
       <section class="search container">
         <h2 class="visually-hidden">Search your tour</h2>
@@ -97,9 +98,9 @@
     <section class="tour-categories">
       <div class="container">
         <ul class="tour-categories__list">
-          <li><a class="button button--bordered button--active">Private</a></li>
+          <li><a class="button button--bordered" href="tours-list">Private</a></li>
           <li><a class="button button--bordered" href="tours-list-group.html">Group</a></li>
-          <li><a class="button button--bordered" href="tours-list-activities.html">Tours and activities</a></li>
+          <li><a class="button button--bordered button--active" href="#">Tours and activities</a></li>
         </ul>
 
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
@@ -174,82 +175,6 @@
                   readonly>
               </div>
             </fieldset>
-
-            <fieldset>
-              <legend>Services</legend>
-              <div class="filter__checkbox-wrapper">
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="hotel" checked>
-                  <span></span>
-                  Hotel
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="transport">
-                  <span></span>
-                  Transport
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="guide">
-                  <span></span>
-                  Guide
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="alults_only">
-                  <span></span>
-                  Adults only
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="perfect_for_children">
-                  <span></span>
-                  Perfect for children
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Cities</legend>
-              <div class="filter__checkbox-wrapper">
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="moscow" checked>
-                  <span></span>
-                  Moscow
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="st_petersburg">
-                  <span></span>
-                  St. Peterburg
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="sochi">
-                  <span></span>
-                  Sochi
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="kaliningrad">
-                  <span></span>
-                  Kaliningrad
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="baikal_lake">
-                  <span></span>
-                  Baikal Lake
-                </label>
-
-                <label class="filter__label filter__label--checkbox">
-                  <input class="visually-hidden" type="checkbox" name="murmansk">
-                  <span></span>
-                  Murmansk
-                </label>
-              </div>
-            </fieldset>
           </form>
         </aside>
       </div>
@@ -261,13 +186,13 @@
             <li class="tours-list__item">
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
-                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/activities/img-01--desktop.jpg"
+                    srcset="assets/img/activities/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
                     <a class="tour-card__link" href="tour-info.html">
-                      <h3 class="tour-card__heading">Moscow and<br> St. Peterburg holiday</h3>
+                      <h3 class="tour-card__heading">The Pushkin Museum</h3>
                     </a>
 
                     <span class="popularity">
@@ -296,121 +221,33 @@
                   </p>
 
                   <div class="tour-card__footer">
-                    <div class="tour-card__includes">
-                      <h4 class="tour-card__inner-heading">Includes</h4>
-                      <ul class="tour-card__includes-list">
-                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
-                          <span class="visually-hidden">Hotel</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--more">
-                          <span>+2</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="tour-card__cities">
-                      <h4 class="tour-card__inner-heading">Cities</h4>
-                      <ul class="tour-card__cities-list">
-                        <li>Moscow</li>
-                        <li>St. Peterburg</li>
-                        <li>More cities</li>
-                      </ul>
+                    <div class="tour-card__important">
+                      <h4 class="tour-card__inner-heading">Important</h4>
+                      <span>Closed on Sunday</span>
                     </div>
 
                     <div class="tour-card__price">
                       <h4 class="tour-card__inner-heading">Price</h4>
                       <span>from</span>
-                      <span class="tour-card__price-value">200$</span>
+                      <span class="tour-card__value">200$</span>
                     </div>
                   </div>
                 </div>
               </article>
             </li>
 
-            <li>
+            <li class="tours-list__item">
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="assets/img/tour-card/img-02--desktop.jpg"
-                    srcset="assets/img/tour-card/img-02--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/activities/img-01--desktop.jpg"
+                    srcset="assets/img/activities/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
-                    <h3 class="tour-card__heading">Moscow holiday</h3>
-                    <span class="popularity">
-                      <svg class="popularity__star popularity__star--filled">
-                        <use href="assets/img/sprite.svg#star"></use>
-                      </svg>
-                      <svg class="popularity__star popularity__star--filled">
-                        <use href="assets/img/sprite.svg#star"></use>
-                      </svg>
-                      <svg class="popularity__star popularity__star--filled">
-                        <use href="assets/img/sprite.svg#star"></use>
-                      </svg>
-                      <svg class="popularity__star popularity__star--filled">
-                        <use href="assets/img/sprite.svg#star"></use>
-                      </svg>
-                      <svg class="popularity__star">
-                        <use href="assets/img/sprite.svg#star"></use>
-                      </svg>
-                    </span>
-                  </header>
+                    <a class="tour-card__link" href="tour-info.html">
+                      <h3 class="tour-card__heading">The Pushkin Museum</h3>
+                    </a>
 
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                    ullamcorper suscipit
-                  </p>
-
-                  <div class="tour-card__footer">
-                    <div class="tour-card__includes">
-                      <h4 class="tour-card__inner-heading">Includes</h4>
-                      <ul class="tour-card__includes-list">
-                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
-                          <span class="visually-hidden">Hotel</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="tour-card__price">
-                      <h4 class="tour-card__inner-heading">Price</h4>
-                      <span>from</span>
-                      <span class="tour-card__price-value">200$</span>
-                    </div>
-                  </div>
-                </div>
-              </article>
-            </li>
-
-            <li>
-              <article class="tour-card">
-                <picture>
-                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
-                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
-                </picture>
-                <div class="tour-card__content">
-                  <header class="tour-card__header">
-                    <h3 class="tour-card__heading">Moscow holiday</h3>
                     <span class="popularity">
                       <svg class="popularity__star popularity__star--filled">
                         <use href="assets/img/sprite.svg#star"></use>
@@ -437,52 +274,33 @@
                   </p>
 
                   <div class="tour-card__footer">
-                    <div class="tour-card__includes">
-                      <h4 class="tour-card__inner-heading">Includes</h4>
-                      <ul class="tour-card__includes-list">
-                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
-                          <span class="visually-hidden">Hotel</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--more">
-                          <span>+2</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="tour-card__cities">
-                      <h4 class="tour-card__inner-heading">Cities</h4>
-                      <ul class="tour-card__cities-list">
-                        <li>Moscow</li>
-                        <li>Peterburg</li>
-                        <li>More cities</li>
-                      </ul>
+                    <div class="tour-card__important">
+                      <h4 class="tour-card__inner-heading">Important</h4>
+                      <span>Closed on Sunday</span>
                     </div>
 
                     <div class="tour-card__price">
                       <h4 class="tour-card__inner-heading">Price</h4>
                       <span>from</span>
-                      <span class="tour-card__price-value">200$</span>
+                      <span class="tour-card__value">200$</span>
                     </div>
                   </div>
                 </div>
               </article>
             </li>
 
-            <li>
+            <li class="tours-list__item">
               <article class="tour-card">
                 <picture>
-                  <img class="tour-card__image" src="assets/img/tour-card/img-01--desktop.jpg"
-                    srcset="assets/img/tour-card/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                  <img class="tour-card__image" src="assets/img/activities/img-01--desktop.jpg"
+                    srcset="assets/img/activities/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
                 </picture>
                 <div class="tour-card__content">
                   <header class="tour-card__header">
-                    <h3 class="tour-card__heading">Moscow holiday</h3>
+                    <a class="tour-card__link" href="tour-info.html">
+                      <h3 class="tour-card__heading">The Pushkin Museum</h3>
+                    </a>
+
                     <span class="popularity">
                       <svg class="popularity__star popularity__star--filled">
                         <use href="assets/img/sprite.svg#star"></use>
@@ -509,37 +327,68 @@
                   </p>
 
                   <div class="tour-card__footer">
-                    <div class="tour-card__includes">
-                      <h4 class="tour-card__inner-heading">Includes</h4>
-                      <ul class="tour-card__includes-list">
-                        <li class="tour-card__includes-item tour-card__includes-item--hotel">
-                          <span class="visually-hidden">Hotel</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--transport">
-                          <span class="visually-hidden">Transport</span>
-                        </li>
-                        <li class="tour-card__includes-item tour-card__includes-item--more">
-                          <span>+2</span>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="tour-card__cities">
-                      <h4 class="tour-card__inner-heading">Cities</h4>
-                      <ul class="tour-card__cities-list">
-                        <li>Moscow</li>
-                        <li>Peterburg</li>
-                        <li>More cities</li>
-                      </ul>
+                    <div class="tour-card__important">
+                      <h4 class="tour-card__inner-heading">Important</h4>
+                      <span>Closed on Sunday</span>
                     </div>
 
                     <div class="tour-card__price">
                       <h4 class="tour-card__inner-heading">Price</h4>
                       <span>from</span>
-                      <span class="tour-card__price-value">200$</span>
+                      <span class="tour-card__value">200$</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="tours-list__item">
+              <article class="tour-card">
+                <picture>
+                  <img class="tour-card__image" src="assets/img/activities/img-01--desktop.jpg"
+                    srcset="assets/img/activities/img-01--desktop@2x.jpg 2x" width="350" height="500" alt="">
+                </picture>
+                <div class="tour-card__content">
+                  <header class="tour-card__header">
+                    <a class="tour-card__link" href="tour-info.html">
+                      <h3 class="tour-card__heading">The Pushkin Museum</h3>
+                    </a>
+
+                    <span class="popularity">
+                      <svg class="popularity__star popularity__star--filled">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="popularity__star">
+                        <use href="assets/img/sprite.svg#star"></use>
+                      </svg>
+                    </span>
+                  </header>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit
+                  </p>
+
+                  <div class="tour-card__footer">
+                    <div class="tour-card__important">
+                      <h4 class="tour-card__inner-heading">Important</h4>
+                      <span>Closed on Sunday</span>
+                    </div>
+
+                    <div class="tour-card__price">
+                      <h4 class="tour-card__inner-heading">Price</h4>
+                      <span>from</span>
+                      <span class="tour-card__value">200$</span>
                     </div>
                   </div>
                 </div>

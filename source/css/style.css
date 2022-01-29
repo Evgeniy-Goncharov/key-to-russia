@@ -2172,6 +2172,22 @@ input:checked ~ .button {
   line-height: 58px;
   font-weight: 800;
 }
+.tour-card__important {
+  width: 100%;
+  max-width: 360px;
+}
+.tour-card__important span {
+  display: flex;
+  background-color: #F1F1F1;
+  color: #FF4949;
+  padding: 10px;
+  min-height: 60px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+}
 @media (max-width: 1200px) {
   .tour-card {
     display: block;
