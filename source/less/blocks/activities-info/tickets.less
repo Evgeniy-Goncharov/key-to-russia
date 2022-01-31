@@ -12,3 +12,21 @@
   grid-template-columns: 290px 1fr;
   column-gap: 30px;
 }
+
+@media (max-width: 991px) {
+  .tickets {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .tickets__fieldset {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tickets__fieldset {
+    grid-template-columns: 1fr;
+  }
+}

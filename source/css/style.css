@@ -560,6 +560,7 @@ input:checked ~ .button {
   width: 100%;
   min-height: 72px;
   margin-top: 22px;
+  background-color: #FFFFFF;
 }
 @media (max-width: 768px) {
   .form legend {
@@ -763,6 +764,7 @@ input:checked ~ .button {
   width: 100%;
   min-height: 72px;
   margin-top: 20px;
+  background-color: #FFFFFF;
 }
 .label--small-text {
   font-size: 21px;
@@ -2418,14 +2420,24 @@ input:checked ~ .button {
   }
   .tour__wrapper {
     display: block;
+    padding-bottom: 20px;
   }
   .tour__left-column {
-    padding-left: 0;
+    padding-right: 0;
   }
 }
 @media (max-width: 991px) {
   .tour {
-    padding-top: 121px;
+    padding-top: 101px;
+  }
+  .tour__image {
+    margin-bottom: 10px;
+  }
+  .tour__page-heading {
+    margin-bottom: 10px;
+  }
+  .tour__content p {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -2508,6 +2520,15 @@ input:checked ~ .button {
     margin-right: 30px;
   }
 }
+@media (max-width: 991px) {
+  .traveler-map {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .traveler-map__wrapper {
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 768px) {
   .traveler-map {
     padding-top: 10px;
@@ -2555,12 +2576,19 @@ input:checked ~ .button {
   .traveler-map__form fieldset,
   .traveler-map__form fieldset:last-child {
     margin-right: 0;
+    margin-bottom: 0;
     flex-direction: column;
   }
 }
 .specifications {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .specifications {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 768px) {
   .specifications {
@@ -2707,6 +2735,13 @@ input:checked ~ .button {
     gap: 30px;
   }
 }
+@media (max-width: 991px) {
+  .rate {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 768px) {
   .rate {
     padding: 10px 0;
@@ -2741,9 +2776,23 @@ input:checked ~ .button {
 .guide__heading {
   margin-bottom: 25px;
 }
+@media (max-width: 991px) {
+  .guide {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .guide__fieldset--2columns {
+    gap: 10px;
+  }
+}
 @media (max-width: 768px) {
   .guide {
     padding: 10px 0;
+  }
+}
+@media (max-width: 576px) {
+  .guide__fieldset--2columns {
+    grid-template-columns: 1fr;
   }
 }
 .additional {
@@ -2760,6 +2809,12 @@ input:checked ~ .button {
   font-size: 21px;
   line-height: 32px;
   font-weight: normal;
+}
+@media (max-width: 991px) {
+  .additional {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 768px) {
   .additional {
@@ -2785,6 +2840,7 @@ input:checked ~ .button {
 }
 .feedback__fieldset--2columns {
   grid-template-columns: 378px 1fr;
+  padding-right: 0;
 }
 .feedback__confidentiality {
   font-size: 21px;
@@ -2798,6 +2854,9 @@ input:checked ~ .button {
   .feedback__fieldset {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+  }
+  .feedback__fieldset--2columns {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 768px) {
@@ -2818,7 +2877,7 @@ input:checked ~ .button {
   background: #F1F1F1;
   border-radius: 30px;
   max-width: 377px;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .includes h2 {
   font-style: normal;
@@ -2951,6 +3010,21 @@ input:checked ~ .button {
   grid-template-columns: 290px 1fr;
   -moz-column-gap: 30px;
        column-gap: 30px;
+}
+@media (max-width: 991px) {
+  .tickets {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .tickets__fieldset {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .tickets__fieldset {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
