@@ -21,11 +21,20 @@
 }
 
 @media (max-width: 1160px) {
+  .tour-categories {
+    padding-top: 20px;
+  }
+
   .tour-categories__list {
-    grid-template-columns: 500px;
-    width: 500px;
-    margin: 0 auto;
     row-gap: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .tour-categories__list {
+    grid-template-columns: 1fr;
+    max-width: 576px;
+    margin: 0 auto;
   }
 }
 

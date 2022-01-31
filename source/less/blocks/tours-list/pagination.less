@@ -49,3 +49,18 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 768px) {
+  .pagination__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 26px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
