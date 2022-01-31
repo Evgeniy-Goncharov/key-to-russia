@@ -2064,14 +2064,26 @@ input:checked ~ .button {
   font-weight: 300;
   min-height: 500px;
 }
+.tour-card__image-wrapper {
+  background-color: #F1F1F1;
+  border-radius: 30px 0 0 30px;
+  width: 350px;
+  min-width: 350px;
+  min-height: 500px;
+  height: 100%;
+  display: flex;
+}
+.tour-card__image-wrapper picture {
+  display: block;
+}
 .tour-card__image {
   display: block;
   border-radius: 30px 0 0 30px;
-  width: 350px;
-  min-height: 500px;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  text-indent: -100vw;
 }
 .tour-card__content {
   padding: 56px 50px 25px 50px;
@@ -2283,7 +2295,7 @@ input:checked ~ .button {
   grid-template-columns: 1fr 377px;
 }
 .tour__left-column {
-  padding-left: 37px;
+  padding-right: 30px;
   box-sizing: border-box;
 }
 .tour__content {
@@ -2620,6 +2632,12 @@ input:checked ~ .button {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+.guide__fieldset--2columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
 .guide__heading {
   margin-bottom: 25px;
 }
@@ -2665,6 +2683,9 @@ input:checked ~ .button {
   margin-bottom: 25px;
   align-items: flex-end;
 }
+.feedback__fieldset--2columns {
+  grid-template-columns: 378px 1fr;
+}
 .feedback__confidentiality {
   font-size: 21px;
   line-height: 32px;
@@ -2692,8 +2713,7 @@ input:checked ~ .button {
   }
 }
 .includes {
-  padding: 10px 30px;
-  min-height: 613px;
+  padding: 30px 30px;
   box-sizing: border-box;
   background: #F1F1F1;
   border-radius: 30px;
@@ -2705,6 +2725,7 @@ input:checked ~ .button {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
+  margin: 0;
 }
 .includes ul {
   margin: 0;
@@ -2713,7 +2734,7 @@ input:checked ~ .button {
   font-weight: 300;
   font-size: 21px;
   line-height: 32px;
-  padding: 10px 0 30px;
+  padding: 30px 0 30px;
 }
 .includes__info {
   font-style: normal;
@@ -2744,6 +2765,20 @@ input:checked ~ .button {
 }
 .includes__price p {
   margin: 0;
+}
+.includes__important {
+  margin-bottom: 64px;
+}
+.includes__important h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+.includes__alert {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: #FF4949;
 }
 @media (max-width: 768px) {
   .includes {
@@ -2803,6 +2838,19 @@ input:checked ~ .button {
   .main-nav__list .menu-item:not(:last-child) {
     margin-right: 10px;
   }
+}
+.tickets {
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.tickets__heading {
+  margin-bottom: 25px;
+}
+.tickets__fieldset {
+  display: grid;
+  grid-template-columns: 290px 1fr;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
