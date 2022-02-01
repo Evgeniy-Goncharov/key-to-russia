@@ -20,7 +20,7 @@ let minPeopleValue;
 let maxPeopleValue;
 
 if (filter) {
-  filterPrice  = filter.querySelector('.filter__price');
+  filterPrice = filter.querySelector('.filter__price');
   minPriceValue = filter.querySelector('#min-price');
   maxPriceValue = filter.querySelector('#max-price');
   filterDuration = filter.querySelector('.filter__duration');
@@ -31,7 +31,7 @@ if (filter) {
   maxPeopleValue = filter.querySelector('#max-people');
 }
 
-function initSlider (element, min, max, elementMinValue, elementMaxValue, postfix = '') {
+function initSlider(element, min, max, elementMinValue, elementMaxValue, postfix = '') {
   noUiSlider.create(element, {
     start: [min, max],
     connect: true,
@@ -57,7 +57,8 @@ function initSlider (element, min, max, elementMinValue, elementMaxValue, postfi
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
+
+function initSliders() {
   if (filterPrice) {
     initSlider(filterPrice, MIN_PRICE, MAX_PRICE, minPriceValue, maxPriceValue, ' €')
   }
@@ -69,4 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (filterPeople) {
     initSlider(filterPeople, MIN_PEOPLE, MAX_PEOPLE, minPeopleValue, maxPeopleValue)
   }
-});
+};
+
+export default initSliders;
