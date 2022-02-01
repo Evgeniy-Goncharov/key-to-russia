@@ -1,3 +1,7 @@
+import './api/swiper.min.js';
+import './range.js';
+
+
 const accordionButtons = document.querySelectorAll(".accordion");
 
 // Accordion
@@ -27,45 +31,8 @@ if (accordionButtons) {
 }
 
 // Filter, Swiper
+const blogSliderWrapper = document.querySelector('.blog__slider');
 
-document.addEventListener('DOMContentLoaded', () => {
-  const filterPrice = document.querySelector('.filter__price');
-  const filterDuration = document.querySelector('.filter__duration');
-  const filterPeople = document.querySelector('.filter__people');
-  const blogSliderWrapper = document.querySelector('.blog__slider');
-
-  if (filterPrice) {
-    noUiSlider.create(filterPrice, {
-      start: [100, 400],
-      connect: true,
-      range: {
-        'min': 100,
-        'max': 400
-      }
-    });
-  }
-
-  if (filterDuration) {
-    noUiSlider.create(filterDuration, {
-      start: [3, 9],
-      connect: true,
-      range: {
-        'min': 3,
-        'max': 9
-      }
-    });
-  }
-
-  if (filterPeople) {
-    noUiSlider.create(filterPeople, {
-      start: [0, 50],
-      connect: true,
-      range: {
-        'min': 0,
-        'max': 50
-      }
-    });
-  }
 
   if (blogSliderWrapper) {
     const blogSwiper = new Swiper(blogSliderWrapper, {
@@ -98,6 +65,5 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-});
 
 

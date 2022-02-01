@@ -117,8 +117,8 @@
               <legend>People</legend>
               <div class="filter__people filter__range"></div>
               <div class="filter__values">
-                <input class="filter__value" name="min-people" type="text" value="0" readonly>
-                <input class="filter__value filter__value--text-right" name="max-people" type="text" value="50"
+                <input class="filter__value" id="min-people" name="min-people" type="text" value="0" readonly>
+                <input class="filter__value filter__value--text-right" id="max-people" name="max-people" type="text" value="50"
                   readonly>
               </div>
             </fieldset>
@@ -170,8 +170,8 @@
               <legend>Price</legend>
               <div class="filter__price filter__range"></div>
               <div class="filter__values">
-                <input class="filter__value" name="min-price" type="text" value="100 €" readonly>
-                <input class="filter__value filter__value--text-right" name="max-price" type="text" value="400 €"
+                <input class="filter__value" id="min-price" name="min-price" type="text" value="100 €" readonly>
+                <input class="filter__value filter__value--text-right" id="max-price" name="max-price" type="text" value="400 €"
                   readonly>
               </div>
             </fieldset>
@@ -180,8 +180,8 @@
               <legend>Duration</legend>
               <div class="filter__duration filter__range"></div>
               <div class="filter__values">
-                <input class="filter__value" name="min-duration" type="text" value="3 d" readonly>
-                <input class="filter__value filter__value--text-right" name="max-duration" type="text" value="9 d"
+                <input class="filter__value" id="min-duration" name="min-duration" type="text" value="3 d" readonly>
+                <input class="filter__value filter__value--text-right" id="max-duration" name="max-duration" type="text" value="9 d"
                   readonly>
               </div>
             </fieldset>
@@ -611,8 +611,7 @@
     <p class="footer__copy">Copyright © 2021 Alist. Все права защищены</p>
 
   </footer>
-  <script src="js/script.js"></script>
-  <script src="js/nouislider.min.js"></script>
+  <script src="js/script.js" type="module"></script>
 </body>
 
 </html>
