@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Key to Russia</title>
+  <link href="css/choices.min.css" rel="stylesheet">
   <link href="css/nouislider.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -191,25 +192,34 @@
               <form class="form specification__form" method="GET" action="">
                 <label class="form__label form__label--select">
                   Rooms
-                  <select>
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                  <select class="select-custom" name="rooms">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                   </select>
                 </label>
 
                 <label class="form__label form__label--select">
                   Room type
-                  <select>
-                    <option>Select room type</option>
+                  <select class="select-custom" name="room_type">
+                    <option value="">Select room type</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
                   </select>
                 </label>
 
                 <label class="form__label form__label--select">
                   Preferences
-                  <select>
-                    <option>Select preferences</option>
+                  <select class="select-custom" name="preferences">
+                    <option value="">Select preferences</option>
+                    <option value="select">Select</option>
+                    <option value="suite">Suite</option>
+                    <option value="semi_suite">Semi suite</option>
+                    <option value="nice_views">Nice views</option>
+                    <option value="twin_bed">Twin bed</option>
+                    <option value="king_bed">King bed</option>
+                    <option value="extra_bed">Extra bed</option>
                   </select>
                 </label>
               </form>
@@ -251,28 +261,37 @@
                 </div>
               </div>
 
-              <form class="form specification__form" metod="GET" action="">
+              <form class="form specification__form" method="GET" action="">
                 <label class="form__label form__label--select">
                   Rooms
-                  <select>
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
+                  <select class="select-custom" name="rooms">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
                   </select>
                 </label>
 
                 <label class="form__label form__label--select">
                   Room type
-                  <select>
-                    <option>Select room type</option>
+                  <select class="select-custom" name="room_type">
+                    <option value="">Select room type</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
                   </select>
                 </label>
 
                 <label class="form__label form__label--select">
                   Preferences
-                  <select>
-                    <option>Select preferences</option>
+                  <select class="select-custom" name="preferences">
+                    <option value="">Select preferences</option>
+                    <option value="select">Select</option>
+                    <option value="suite">Suite</option>
+                    <option value="semi_suite">Semi suite</option>
+                    <option value="nice_views">Nice views</option>
+                    <option value="twin_bed">Twin bed</option>
+                    <option value="king_bed">King bed</option>
+                    <option value="extra_bed">Extra bed</option>
                   </select>
                 </label>
               </form>
@@ -342,8 +361,9 @@
             <p>To improve your experience with us, we offer you the guide that will accompany you during your trip.</p>
             <label class="label label--select">
               Language
-              <select>
-                <option>English</option>
+              <select class="select-custom">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
               </select>
             </label>
           </section>
@@ -509,7 +529,7 @@
     </div>
     <p class="footer__copy">Copyright © 2021 Alist. Все права защищены</p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

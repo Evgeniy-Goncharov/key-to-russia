@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Key to Russia</title>
+  <link href="css/choices.min.css" rel="stylesheet">
   <link href="css/nouislider.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -64,15 +65,20 @@
         <form class="search__form form" method="GET" action="">
           <label class="label label--select label--theme-green">
             City
-            <select name="city">
-              <option class="search-option">?</option>
+            <select  class="select-custom" name="city">
+              <option value="moscow">Moscow</option>
+              <option value="st_petersburg">St. Peterburg</option>
+              <option value="sochi">Sochi</option>
+              <option value="kaliningrad">Kaliningrad</option>
+              <option value="baikal_lake">Baikal Lake</option>
+              <option value="murmansk">Murmansk</option>
             </select>
           </label>
 
           <label class="label label--select label--theme-green">
             Number of people
             <select name="people">
-              <option class="search-option">?</option>
+
             </select>
           </label>
 
@@ -83,8 +89,10 @@
 
           <label class="label label--select label--theme-green">
             Type
-            <select name="type">
-              <option class="search-option">?</option>
+            <select class="select-custom" name="type">
+              <option value="private">Private</option>
+              <option value="group">Group</option>
+              <option value="tours_and_activities">Tours and Activities</option>
             </select>
           </label>
           <div>
