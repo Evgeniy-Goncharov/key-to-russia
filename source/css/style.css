@@ -988,6 +988,10 @@ input:checked ~ .button {
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
+.select-people__value {
+  display: inline-block;
+  width: 30px;
+}
 .page-header {
   position: absolute;
   top: 0;

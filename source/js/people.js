@@ -56,7 +56,7 @@ if (selectPeople) {
     }
 
     function decreaseValue() {
-      if (count > MIN_PEOPLE_COUNT) {
+      if (peopleCounts[count] > MIN_PEOPLE_COUNT) {
         peopleCounts[count]--;
         valueElement.textContent = formatValue(peopleCounts[count]);
         select.value = `${peopleCounts.adultCount} adults | ${peopleCounts.childsCount} childs`;
