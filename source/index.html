@@ -7,6 +7,7 @@
   <title>Key to Russia</title>
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/nouislider.min.css" rel="stylesheet">
+  <link href="css/choices.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -58,29 +59,93 @@
 
   <main class="page-main">
     <div class="main__wrapper">
-      <section class="search search__wrapper">
+      <section class="search container">
         <h2 class="visually-hidden">Search your tour</h2>
-        <form class="search-form search__form" method="GET" action="">
-          <label class="search-label">
+        <form class="search__form form" method="GET" action="">
+          <label class="label label--select label--theme-green">
             City
-            <select class="search-select select-city" name="city">
-              <option class="search-option">?</option>
+            <select class="select-custom" name="city">
+              <option value="moscow">Moscow</option>
+              <option value="st_petersburg">St. Peterburg</option>
+              <option value="sochi">Sochi</option>
+              <option value="kaliningrad">Kaliningrad</option>
+              <option value="baikal_lake">Baikal Lake</option>
+              <option value="murmansk">Murmansk</option>
             </select>
           </label>
 
-          <label class="search-label">
-            Number of people
-            <select class="search-select select-number" name="people">
-              <option class="search-option">?</option>
-            </select>
-          </label>
+          <div class="select-people">
+            <label class="label label--select label--theme-green">
+              Number of people
+              <input id="number-of-people" name="people" value="3 adults | 3 childs" readonly>
+            </label>
 
-          <label class="search-label">
+            <div class="select-people__popup">
+              <header class="select-people__header">
+                <div class="select-people__counter select-people__counter--adult">
+                  Adult
+                  <button class="select-people__button select-people__button--minus" type="button">-</button>
+                  <span class="select-people__value">03</span>
+                  <button class="select-people__button select-people__button--plus" type="button">+</button>
+                </div>
+
+                <div class="select-people__counter select-people__counter--childs">
+                  Childs
+                  <button class="select-people__button select-people__button--minus" type="button">-</button>
+                  <span class="select-people__value">03</span>
+                  <button class="select-people__button select-people__button--plus" type="button">+</button>
+                </div>
+              </header>
+              <div class="select-people__grid">
+                <label class="label label--small-select">
+                  <span class="visually-hidden">Возраст взрослых</span>
+                  <select class="select-custom">
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                  </select>
+                </label>
+
+                <label class="label label--small-select">
+                  <span class="visually-hidden">Возраст детей</span>
+                  <select class="select-custom">
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                  </select>
+                </label>
+
+                <label class="label label--small-select">
+                  <span class="visually-hidden">???</span>
+                  <select class="select-custom">
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <label class="label label--select label--theme-green">
             Dates of your jorney
-            <input class="search-input" type="date">
+            <input type="date">
           </label>
 
-          <button class="button search-submit" type="submit">Search</button>
+          <label class="label label--select label--theme-green">
+            Type
+            <select class="select-custom" name="type">
+              <option value="private">Private</option>
+              <option value="group">Group</option>
+              <option value="tours_and_activities">Tours and Activities</option>
+            </select>
+          </label>
+          <div>
+            <button class="search__submit-button button" type="submit">Search</button>
+          </div>
         </form>
       </section>
 

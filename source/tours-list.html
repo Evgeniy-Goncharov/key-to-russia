@@ -65,7 +65,7 @@
         <form class="search__form form" method="GET" action="">
           <label class="label label--select label--theme-green">
             City
-            <select  class="select-custom" name="city">
+            <select class="select-custom" name="city">
               <option value="moscow">Moscow</option>
               <option value="st_petersburg">St. Peterburg</option>
               <option value="sochi">Sochi</option>
@@ -75,12 +75,61 @@
             </select>
           </label>
 
-          <label class="label label--select label--theme-green">
-            Number of people
-            <select name="people">
+          <div class="select-people">
+            <label class="label label--select label--theme-green">
+              Number of people
+              <input id="number-of-people" name="people" value="3 adults | 3 childs" readonly>
+            </label>
 
-            </select>
-          </label>
+            <div class="select-people__popup">
+              <header class="select-people__header">
+                <div class="select-people__counter select-people__counter--adult">
+                  Adult
+                  <button class="select-people__button select-people__button--minus" type="button">-</button>
+                  <span class="select-people__value">03</span>
+                  <button class="select-people__button select-people__button--plus" type="button">+</button>
+                </div>
+
+                <div class="select-people__counter select-people__counter--childs">
+                  Childs
+                  <button class="select-people__button select-people__button--minus" type="button">-</button>
+                  <span class="select-people__value">03</span>
+                  <button class="select-people__button select-people__button--plus" type="button">+</button>
+                </div>
+              </header>
+              <div class="select-people__grid">
+                <label class="label label--small-select">
+                  <span class="visually-hidden">Возраст взрослых</span>
+                  <select class="select-custom">
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                  </select>
+                </label>
+
+                <label class="label label--small-select">
+                  <span class="visually-hidden">Возраст детей</span>
+                  <select class="select-custom">
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                  </select>
+                </label>
+
+                <label class="label label--small-select">
+                  <span class="visually-hidden">???</span>
+                  <select class="select-custom">
+                    <option value="14">14 years</option>
+                    <option value="15">15 years</option>
+                    <option value="16">16 years</option>
+                    <option value="17">17 years</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+          </div>
 
           <label class="label label--select label--theme-green">
             Dates of your jorney
@@ -103,6 +152,7 @@
     </div>
 
     <section class="tour-categories">
+      <h2 class="visually-hidden">Select category</h2>
       <div class="container">
         <ul class="tour-categories__list">
           <li><a class="button button--bordered button--active">Private</a></li>
@@ -168,8 +218,8 @@
               <div class="filter__price filter__range"></div>
               <div class="filter__values">
                 <input class="filter__value" id="min-price" name="min-price" type="text" value="100 €" readonly>
-                <input class="filter__value filter__value--text-right" id="max-price" name="max-price" type="text" value="400 €"
-                  readonly>
+                <input class="filter__value filter__value--text-right" id="max-price" name="max-price" type="text"
+                  value="400 €" readonly>
               </div>
             </fieldset>
 
@@ -178,8 +228,8 @@
               <div class="filter__duration filter__range"></div>
               <div class="filter__values">
                 <input class="filter__value" id="min-duration" name="min-duration" type="text" value="3 d" readonly>
-                <input class="filter__value filter__value--text-right" id="max-duration" name="max-duration" type="text" value="9 d"
-                  readonly>
+                <input class="filter__value filter__value--text-right" id="max-duration" name="max-duration" type="text"
+                  value="9 d" readonly>
               </div>
             </fieldset>
 

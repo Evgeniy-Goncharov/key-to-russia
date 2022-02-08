@@ -1,0 +1,45 @@
+.select-people {
+  position: relative;
+
+  &--opened .select-people__popup {
+    display: block;
+  }
+}
+
+.select-people__popup {
+  position: absolute;
+  width: 410px;
+  background-color: @basic-white;
+  top: calc(100% + 30px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  border-radius: 30px;
+  padding: 25px;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: @basic-green;
+  display: none;
+}
+
+.select-people__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-people__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  color: @basic-green;
+}
+
+.select-people__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+
