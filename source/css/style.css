@@ -2155,7 +2155,8 @@ input:checked ~ .button {
   stroke: #FFFFFF;
   fill: none;
 }
-.filter__label--popularity input:checked ~ svg {
+.filter__label--popularity input:checked ~ svg,
+.filter__label--popularity input.checked ~ svg {
   fill: #FFFFFF;
 }
 .filter__label--checkbox {

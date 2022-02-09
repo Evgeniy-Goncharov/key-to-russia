@@ -73,3 +73,4 @@ function initSliders() {
 };
 
 export default initSliders;
+export { filter };
