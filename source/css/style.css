@@ -2285,9 +2285,6 @@ input:checked ~ .button {
   justify-content: space-between;
   align-items: flex-start;
 }
-.tour-card__link {
-  text-decoration: none;
-}
 .tour-card__heading {
   font-size: 36px;
   line-height: 38px;
@@ -2296,6 +2293,52 @@ input:checked ~ .button {
   margin: 0;
   margin-bottom: 30px;
   text-decoration: none;
+}
+.tour-card__heading a {
+  text-decoration: none;
+  color: #264F55;
+}
+.tour-card__heading a:hover {
+  text-decoration: underline;
+}
+.tour-card__text-wrapper {
+  position: relative;
+  height: 125px;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+.tour-card__text-wrapper a {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #264F55;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  display: inline;
+}
+.tour-card__text-wrapper a:hover {
+  text-decoration: underline;
+}
+.tour-card__text-panel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: linear-gradient(to right, transparent, #FFFFFF 5%);
+}
+.tour-card__text-button {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  margin-left: 25px;
+  color: #264F55;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 26px;
 }
 .tour-card__footer {
   display: flex;

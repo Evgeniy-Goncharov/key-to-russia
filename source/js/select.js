@@ -8,6 +8,7 @@ if (customSelects) {
     const choices = new Choices(customSelect, {
       searchEnabled: false,
       itemSelectText: '',
+      allowHTML: true
     });
   })
 }
