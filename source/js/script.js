@@ -5,6 +5,7 @@ import './accordion.js';
 import './select.js';
 import './people.js';
 import './popularity.js';
+import './date.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initSliders();

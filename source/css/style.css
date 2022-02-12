@@ -410,7 +410,7 @@ template {
   background-color: #FFFFFF;
   color: #264F55;
   box-sizing: border-box;
-  padding: 19px;
+  padding: 21px;
   font-size: 24px;
   line-height: 29px;
   font-weight: 500;
@@ -719,21 +719,8 @@ input:checked ~ .button {
 .choices {
   margin-top: 22px;
 }
-.choices.is-open::after {
-  border: none;
-  margin-top: 0;
-  transform: rotate(180deg);
-}
-.choices[data-type*="select-one"]::after {
-  background-image: url("../assets/img/icons/select-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 19px;
-  height: 12px;
-  top: 32px;
-  right: 28px;
-  border: none;
-  transition: transform 0.2s;
+.choices::after {
+  display: none;
 }
 .choices__inner,
 .is-open .choices__inner,
@@ -750,6 +737,28 @@ input:checked ~ .button {
   font-weight: 500;
   margin-top: 0;
   background-color: #FFFFFF;
+  padding-right: 45px;
+}
+.choices[data-type*="select-one"] .choices__inner {
+  padding-bottom: 10px;
+}
+.choices__inner::after {
+  content: "";
+  background-image: url("../assets/img/icons/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 28px;
+  border: none;
+  transition: transform 0.2s;
+  position: absolute;
+}
+.is-open .choices__inner::after {
+  transform: rotate(180deg);
 }
 .choices__list--single {
   color: #264F55;
@@ -789,6 +798,22 @@ input:checked ~ .button {
   line-height: 29px;
   font-weight: 500;
   color: #264F55;
+}
+.label select::after,
+.label .select::after {
+  content: "";
+  background-image: url("../assets/img/icons/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 19px;
+  height: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 28px;
+  border: none;
+  transition: transform 0.2s;
+  position: absolute;
 }
 .label input {
   display: block;
@@ -861,7 +886,8 @@ input:checked ~ .button {
   display: flex;
   flex-direction: column;
 }
-.label--select select {
+.label--select > select,
+.label--select > .select {
   padding: 10px 20px;
   border: 3px solid #264F55;
   outline: none;
@@ -871,13 +897,15 @@ input:checked ~ .button {
   color: #264F55;
   width: 100%;
   min-height: 72px;
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: #FFFFFF;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   background-repeat: no-repeat;
   background-position: center right 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 .label--small-text {
   font-size: 21px;
@@ -888,6 +916,7 @@ input:checked ~ .button {
   color: #FFFFFF;
 }
 .label--theme-green select,
+.label--theme-green .select,
 .label--theme-green input,
 .label--theme-green .choices__inner,
 .label--theme-green .is-open .choices__inner,
@@ -896,7 +925,9 @@ input:checked ~ .button {
   background-color: #264F55;
   color: #FFFFFF;
 }
-.label--theme-green .choices[data-type*="select-one"]::after {
+.label--theme-green .choices__inner::after,
+.label--theme-green select::after,
+.label--theme-green .select::after {
   background-image: url("../assets/img/icons/select-arrow--white.svg");
 }
 .label--theme-green .choices__list--single {
@@ -954,6 +985,18 @@ input:checked ~ .button {
 .select-people--opened .select-people__popup {
   display: block;
 }
+.select-people--opened label .select-people__input {
+  background-image: url("../../assets/img/icons/select-arrow--white-rotated.svg");
+}
+.select-people__input,
+label .select-people__input {
+  background-image: url("../../assets/img/icons/select-arrow--white.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  background-size: 19px 12px;
+  padding-right: 45px;
+  transition: background-image 0.2s;
+}
 .select-people__popup {
   position: absolute;
   width: 410px;
@@ -991,6 +1034,64 @@ input:checked ~ .button {
 .select-people__value {
   display: inline-block;
   width: 30px;
+}
+.datepicker {
+  color: #000000;
+  /* stylelint-disable-next-line declaration-no-important */
+  top: 100px !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  left: -5px !important;
+}
+.datepicker-dropdown .datepicker-picker {
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  border: none;
+}
+.datepicker-header {
+  display: none;
+}
+.datepicker-grid {
+  width: 100%;
+}
+.days-of-week {
+  background-color: #F1F1F1;
+  border-radius: 30px 30px 0 0;
+}
+.days .days-of-week .dow {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #264F55;
+}
+.datepicker-view .days .datepicker-cell,
+.datepicker-view .dow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 48px;
+  box-sizing: border-box;
+  height: 48px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: #000000;
+}
+.datepicker-view .datepicker-cell.selected,
+.datepicker-view .datepicker-cell.selected:hover {
+  background-image: url("../../assets/img/icons/green-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+}
+.datepicker-cell.range,
+.datepicker-cell.range-end:not(.selected),
+.datepicker-cell.range-start:not(.selected) {
+  background-color: #FFFFFF;
+}
+.datepicker-cell.next:not(.disabled),
+.datepicker-cell.prev:not(.disabled) {
+  color: #C4C4C4;
 }
 .page-header {
   position: absolute;
@@ -1148,6 +1249,22 @@ input:checked ~ .button {
   padding-top: 26px;
   font-size: 24px;
   line-height: 29px;
+}
+.search__date.select {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+.search__date.select input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+}
+.search__date.select > span {
+  margin-right: 6px;
 }
 @media (max-width: 1500px) {
   .search__form {

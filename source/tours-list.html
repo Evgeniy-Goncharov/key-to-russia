@@ -7,6 +7,7 @@
   <title>Key to Russia</title>
   <link href="css/choices.min.css" rel="stylesheet">
   <link href="css/nouislider.min.css" rel="stylesheet">
+  <link href="css/datepicker.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -78,7 +79,7 @@
           <div class="select-people">
             <label class="label label--select label--theme-green">
               Number of people
-              <input id="number-of-people" name="people" value="3 adults | 3 childs" readonly>
+              <input class="select-people__input" id="number-of-people" name="people" value="3 adults | 3 childs" readonly>
             </label>
 
             <div class="select-people__popup">
@@ -135,10 +136,14 @@
             </div>
           </div>
 
-          <label class="label label--select label--theme-green">
+          <div class="label label--select label--theme-green">
             Dates of your jorney
-            <input type="date">
-          </label>
+            <div id="foo" class="search__date select">
+              <input type="text" name="start">
+              <span>-</span>
+              <input type="text" name="end">
+            </div>
+          </div>
 
           <label class="label label--select label--theme-green">
             Type

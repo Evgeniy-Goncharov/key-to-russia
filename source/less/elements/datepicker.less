@@ -1,0 +1,68 @@
+.datepicker {
+  color: @basic-black;
+  /* stylelint-disable-next-line declaration-no-important */
+  top: 100px !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  left: -5px !important;
+}
+
+.datepicker-dropdown .datepicker-picker {
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  border: none;
+}
+
+.datepicker-header {
+  display: none;
+}
+
+.datepicker-grid {
+  width: 100%;
+}
+
+.days-of-week {
+  background-color: @basic-gray;
+  border-radius: 30px 30px 0 0;
+}
+
+.days .days-of-week .dow {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: @basic-green;
+}
+
+.datepicker-view .days .datepicker-cell,
+.datepicker-view .dow {
+  // flex-basis: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 48px;
+  box-sizing: border-box;
+  height: 48px;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 12px;
+  color: @basic-black;
+}
+
+.datepicker-view .datepicker-cell.selected,
+.datepicker-view .datepicker-cell.selected:hover {
+  background-image: url("../../assets/img/icons/green-circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: @basic-white;
+  background-color: @basic-white;
+}
+
+.datepicker-cell.range,
+.datepicker-cell.range-end:not(.selected),
+.datepicker-cell.range-start:not(.selected) {
+  background-color: @basic-white;
+}
+
+.datepicker-cell.next:not(.disabled),
+.datepicker-cell.prev:not(.disabled) {
+  color: @basic-middle-gray;
+}

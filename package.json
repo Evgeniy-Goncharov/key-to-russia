@@ -17,7 +17,8 @@
     "postcss": "8.2.8",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.10",
-    "swiper": "^7.4.1"
+    "swiper": "^7.4.1",
+    "vanillajs-datepicker": "^1.2.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

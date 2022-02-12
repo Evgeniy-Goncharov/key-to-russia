@@ -4,6 +4,20 @@
   &--opened .select-people__popup {
     display: block;
   }
+
+  &--opened label .select-people__input {
+    background-image: url("../../assets/img/icons/select-arrow--white-rotated.svg");
+  }
+}
+
+.select-people__input,
+label .select-people__input {
+  background-image: url("../../assets/img/icons/select-arrow--white.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  background-size: 19px 12px;
+  padding-right: 45px;
+  transition: background-image 0.2s;
 }
 
 .select-people__popup {
