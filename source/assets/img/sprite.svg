@@ -4,6 +4,8 @@
 </g></symbol><symbol id="back" viewBox="0 0 19 32"><g fill="none">
 <path d="M16 28.46L3.59998 16.0601L16 3.66016" fill="#264F55"/>
 <path d="M16 28.46L3.59998 16.0601L16 3.66016" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="green-circle" viewBox="0 0 35 33"><g fill="none">
+<rect x="0.96106" y="0.627441" width="33.5781" height="31.5781" rx="15.7891" fill="#264F55"/>
 </g></symbol><symbol id="hotel" viewBox="0 0 60 60"><g fill="none">
 <circle cx="30" cy="30" r="30" fill="#264F55"/>
 <path d="M42.4346 24.7856H26.1527C25.3573 24.7856 24.0293 25.0872 24.0293 27.1336V30.2643H44.5581V27.1336C44.5581 25.0936 43.2301 24.7856 42.4346 24.7856Z" fill="white"/>
@@ -12,6 +14,8 @@
 </g></symbol><symbol id="next" viewBox="0 0 19 32"><g fill="none">
 <path d="M3 3.86035L15.4 16.2603L3 28.6602" fill="#264F55"/>
 <path d="M3 3.86035L15.4 16.2603L3 28.6602" stroke="white" stroke-width="6" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g></symbol><symbol id="select-arrow--white-rotated" viewBox="0 0 19 12"><g fill="none">
+<path d="M16.9186 9.7317L9.50045 2.15069L1.81724 9.76765" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol><symbol id="select-arrow--white" viewBox="0 0 19 12"><g fill="none">
 <path d="M1.8999 2.34985L9.3999 9.84985L16.9999 2.1499" stroke="white" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </g></symbol><symbol id="select-arrow" viewBox="0 0 19 12"><g fill="none">

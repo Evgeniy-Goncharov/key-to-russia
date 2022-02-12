@@ -7,6 +7,7 @@
   <title>Key to Russia</title>
   <link href="css/nouislider.min.css" rel="stylesheet">
   <link href="css/choices.min.css" rel="stylesheet">
+  <link href="css/datepicker.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -79,23 +80,27 @@
           <div class="select-people">
             <label class="label label--select label--theme-green">
               Number of people
-              <input id="number-of-people" name="people" value="3 adults | 3 childs" readonly>
+              <input class="select-people__input" id="number-of-people" name="people" value="3 adults | 3 childs" readonly>
             </label>
 
             <div class="select-people__popup">
               <header class="select-people__header">
                 <div class="select-people__counter select-people__counter--adult">
                   Adult
-                  <button class="select-people__button select-people__button--minus" type="button" aria-label="Decrease adult count">-</button>
+                  <button class="select-people__button select-people__button--minus" type="button"
+                    aria-label="Decrease adult count">-</button>
                   <span class="select-people__value">03</span>
-                  <button class="select-people__button select-people__button--plus" type="button" aria-label="Increase adult count">+</button>
+                  <button class="select-people__button select-people__button--plus" type="button"
+                    aria-label="Increase adult count">+</button>
                 </div>
 
                 <div class="select-people__counter select-people__counter--childs">
                   Childs
-                  <button class="select-people__button select-people__button--minus" type="button" aria-label="Decrease childs count">-</button>
+                  <button class="select-people__button select-people__button--minus" type="button"
+                    aria-label="Decrease childs count">-</button>
                   <span class="select-people__value">03</span>
-                  <button class="select-people__button select-people__button--plus" type="button" aria-label="Increase childs count">+</button>
+                  <button class="select-people__button select-people__button--plus" type="button"
+                    aria-label="Increase childs count">+</button>
                 </div>
               </header>
               <div class="select-people__grid">
@@ -132,10 +137,14 @@
             </div>
           </div>
 
-          <label class="label label--select label--theme-green">
+          <div class="label label--select label--theme-green">
             Dates of your jorney
-            <input type="date">
-          </label>
+            <div id="foo" class="search__date select">
+              <input type="text" name="start">
+              <span>-</span>
+              <input type="text" name="end">
+            </div>
+          </div>
 
           <label class="label label--select label--theme-green">
             Type
