@@ -302,52 +302,54 @@
             <h2 class="section-heading section-heading--small">Select the rate</h2>
 
             <ul class="rate__list">
-              <li class="rate__card">
-                <h3>Comfort</h3>
-                <ul>
-                  <li>KIA Rio</li>
-                  <li>Hyundai Solaris</li>
-                  <li>Other cars</li>
-                </ul>
+              <li class="rate__item">
+                <input class="rate__radio visually-hidden" name="rate" type="radio" value="comfort" id="rate-comfort">
+                <label class="rate__card" for="rate-comfort">
+                  <span class="rate__card-title">Comfort</span>
+                  <span class="rate__card-item">KIA Rio</span>
+                  <span class="rate__card-item">Hyundai Solaris</span>
+                  <span class="rate__card-item">Other cars</span>
+                </label>
               </li>
 
-              <li class="rate__card">
-                <h3>Comfort +</h3>
-                <ul>
-                  <li>KIA Optima</li>
-                  <li>Toyota Camry</li>
-                  <li>Other cars</li>
-                </ul>
+              <li class="rate__item">
+                <input class="rate__radio visually-hidden" name="rate" type="radio" value="comfort+" id="rate-comfort+">
+                <label class="rate__card" for="rate-comfort+">
+                  <span class="rate__card-title">Comfort +</span>
+                  <span class="rate__card-item">KIA Optima</span>
+                  <span class="rate__card-item">Toyota Camry</span>
+                  <span class="rate__card-item">Other cars</span>
+                </label>
               </li>
 
-              <li class="rate__card">
-                <h3>Business</h3>
-                <ul>
-                  <li>E class</li>
-                  <li>BMW 5</li>
-                  <li>Other cars</li>
-                </ul>
+              <li class="rate__item">
+                <input class="rate__radio visually-hidden" name="rate" type="radio" value="business" id="rate-business">
+                <label class="rate__card" for="rate-business">
+                  <span class="rate__card-title">Business</span class="rate__card-title">
+                  <span class="rate__card-item">E class</span>
+                  <span class="rate__card-item">BMW 5</span>
+                  <span class="rate__card-item">Other cars</span>
 
-                <small>*the car will be provided upon the request</small>
-
-                <label class="label label--checkbox label--checkbox-green label--small-text">
+                  <small>*the car will be provided upon the request</small>
+                </label>
+                <label class="rate__checkbox-label label label--checkbox label--checkbox-green label--small-text">
                   <input class="visually-hidden" type="checkbox" name="hotel">
                   <span></span>
                   Provide security
                 </label>
               </li>
 
-              <li class="rate__card">
-                <h3>Comfort</h3>
-                <ul>
-                  <li>S class Mercedes</li>
-                  <li>Maybach</li>
-                  <li>BMW 6</li>
-                </ul>
+              <li class="rate__item">
+                <input class="rate__radio visually-hidden" name="rate" type="radio" value="premium" id="rate-premium">
+                <label class="rate__card" for="rate-premium">
+                  <span class="rate__card-title">Premium</span>
+                  <span class="rate__card-item">S class Mercedes</span>
+                  <span class="rate__card-item">Maybach</span>
+                  <span class="rate__card-item">BMW 6</span>
 
-                <small>*the car will be provided upon the request</small>
-
-                <label class="label label--checkbox label--checkbox-green label--small-text">
+                  <small>*the car will be provided upon the request</small>
+                </label>
+                <label class="rate__checkbox-label label label--checkbox label--checkbox-green label--small-text">
                   <input class="visually-hidden" type="checkbox" name="hotel">
                   <span></span>
                   Provide security

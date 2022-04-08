@@ -75,7 +75,7 @@
       box-sizing: border-box;
     }
 
-    input:checked ~ span::before {
+    span::before {
       content: "";
       position: absolute;
       width: 12px;
@@ -87,6 +87,11 @@
       right: 0;
       bottom: 0;
       margin: auto;
+      display: none;
+    }
+
+    input:checked ~ span::before {
+      display: block;
     }
   }
 
@@ -95,7 +100,7 @@
       border: 2px solid @basic-green;
     }
 
-    input:checked ~ span::before {
+    span::before {
       background-color: @basic-green;
     }
   }

@@ -12,29 +12,21 @@
   column-gap: 30px;
 }
 
+.rate__item {
+  position: relative;
+}
+
 .rate__card {
   border: 3px solid @basic-green;
   border-radius: 30px;
-  padding: 26px 26px 21px;
+  padding: 26px 26px 52px;
   color: @basic-green;
   font-weight: normal;
   font-size: 21px;
   line-height: 24px;
-
-  h3 {
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: bold;
-    margin: 0;
-    margin-bottom: 22px;
-  }
-
-  ul {
-    margin: 0;
-    margin-bottom: 15px;
-    padding: 0;
-    list-style: none;
-  }
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
 
   small {
     display: block;
@@ -42,6 +34,48 @@
     line-height: 16px;
     font-weight: normal;
     margin-bottom: 20px;
+  }
+}
+
+.rate__radio:checked ~ .rate__card {
+  background-color: @basic-green;
+  color: @basic-white;
+}
+
+.rate__radio:checked ~ .rate__checkbox-label {
+  display: flex;
+}
+
+.rate__card-title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.rate__card-item {
+  display: block;
+
+  &:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+.rate__checkbox-label {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+  color: @basic-white;
+
+  span {
+    border-color: @basic-white;
+
+    &::before {
+      background-color: @basic-white;
+    }
   }
 }
 

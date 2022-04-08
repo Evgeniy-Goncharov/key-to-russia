@@ -8,7 +8,8 @@
 
 .choices__inner,
 .is-open .choices__inner,
-.is-focused .choices__inner {
+.is-focused .choices__inner,
+.is-flipped.is-open .choices__inner {
   padding: 10px 23px;
   border: 3px solid @basic-green;
   border-radius: 30px;
@@ -73,6 +74,12 @@
     background-color: @basic-white;
     font-weight: 800;
   }
+}
+
+.is-flipped .choices__list--dropdown,
+.is-flipped .choices__list[aria-expanded] {
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
 
 .choices__placeholder {

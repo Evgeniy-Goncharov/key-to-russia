@@ -724,7 +724,8 @@ input:checked ~ .button {
 }
 .choices__inner,
 .is-open .choices__inner,
-.is-focused .choices__inner {
+.is-focused .choices__inner,
+.is-flipped.is-open .choices__inner {
   padding: 10px 23px;
   border: 3px solid #264F55;
   border-radius: 30px;
@@ -784,6 +785,11 @@ input:checked ~ .button {
 .is-open .choices__list--dropdown .choices__item.is-highlighted {
   background-color: #FFFFFF;
   font-weight: 800;
+}
+.is-flipped .choices__list--dropdown,
+.is-flipped .choices__list[aria-expanded] {
+  border-radius: 30px;
+  margin-bottom: 20px;
 }
 .choices__placeholder {
   opacity: 1;
@@ -863,7 +869,7 @@ input:checked ~ .button {
   position: relative;
   box-sizing: border-box;
 }
-.label--checkbox input:checked ~ span::before {
+.label--checkbox span::before {
   content: "";
   position: absolute;
   width: 12px;
@@ -875,11 +881,15 @@ input:checked ~ .button {
   right: 0;
   bottom: 0;
   margin: auto;
+  display: none;
+}
+.label--checkbox input:checked ~ span::before {
+  display: block;
 }
 .label--checkbox-green span {
   border: 2px solid #264F55;
 }
-.label--checkbox-green input:checked ~ span::before {
+.label--checkbox-green span::before {
   background-color: #264F55;
 }
 .label--select {
@@ -2958,7 +2968,7 @@ label .select-people__input {
 }
 .specification__wrapper {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 .specification__image-wrapper {
   width: 538px;
@@ -3050,27 +3060,20 @@ label .select-people__input {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+.rate__item {
+  position: relative;
+}
 .rate__card {
   border: 3px solid #264F55;
   border-radius: 30px;
-  padding: 26px 26px 21px;
+  padding: 26px 26px 52px;
   color: #264F55;
   font-weight: normal;
   font-size: 21px;
   line-height: 24px;
-}
-.rate__card h3 {
-  font-size: 36px;
-  line-height: 44px;
-  font-weight: bold;
-  margin: 0;
-  margin-bottom: 22px;
-}
-.rate__card ul {
-  margin: 0;
-  margin-bottom: 15px;
-  padding: 0;
-  list-style: none;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
 }
 .rate__card small {
   display: block;
@@ -3078,6 +3081,40 @@ label .select-people__input {
   line-height: 16px;
   font-weight: normal;
   margin-bottom: 20px;
+}
+.rate__radio:checked ~ .rate__card {
+  background-color: #264F55;
+  color: #FFFFFF;
+}
+.rate__radio:checked ~ .rate__checkbox-label {
+  display: flex;
+}
+.rate__card-title {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 22px;
+  display: block;
+}
+.rate__card-item {
+  display: block;
+}
+.rate__card-item:last-of-type {
+  margin-bottom: 20px;
+}
+.rate__checkbox-label {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: none;
+  color: #FFFFFF;
+}
+.rate__checkbox-label span {
+  border-color: #FFFFFF;
+}
+.rate__checkbox-label span::before {
+  background-color: #FFFFFF;
 }
 @media (max-width: 1450px) {
   .rate__list {
